@@ -25,7 +25,7 @@ export default function CTASection({ bgImage }) {
           <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
             Ready to Bring Your
             <br />
-            <span className="font-serif italic text-amber-500">Vision to Life?</span>
+            <span className="font-serif italic" style={{ color: "#B85040" }}>Vision to Life?</span>
           </h2>
           <p className="text-white/40 mb-10 leading-relaxed">
             From concept to completion, we provide everything you need
@@ -33,7 +33,10 @@ export default function CTASection({ bgImage }) {
           </p>
           <Link
             to={createPageUrl("Contact")}
-            className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-black font-semibold px-10 py-4 rounded-full text-sm transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20"
+            className="inline-flex items-center gap-2 text-white font-semibold px-10 py-4 rounded-full text-sm transition-all duration-300"
+            style={{ backgroundColor: "#B85040" }}
+            onMouseEnter={e => e.currentTarget.style.backgroundColor = "#9a3e30"}
+            onMouseLeave={e => e.currentTarget.style.backgroundColor = "#B85040"}
           >
             Let's Talk <ArrowRight className="w-4 h-4" />
           </Link>

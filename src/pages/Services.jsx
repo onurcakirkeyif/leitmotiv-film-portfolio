@@ -43,14 +43,14 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-[1px] bg-amber-500" />
-            <span className="text-xs uppercase tracking-[0.3em] text-amber-500/80">
+            <div className="w-12 h-[1px]" style={{ backgroundColor: "#B85040" }} />
+            <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "#B85040cc" }}>
               Our Services
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             What We
-            <span className="font-serif italic text-amber-500"> Offer</span>
+            <span className="font-serif italic" style={{ color: "#B85040" }}> Offer</span>
           </h1>
           <p className="text-white/40 max-w-2xl text-lg leading-relaxed">
             We provide a wide range of production and production support services

@@ -14,8 +14,8 @@ export default function ClientsMarquee() {
     <section className="py-20 bg-[#0a0a0a] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-8 h-[1px] bg-amber-500/50" />
-          <span className="text-xs uppercase tracking-[0.3em] text-amber-500/60">
+          <div className="w-8 h-[1px]" style={{ backgroundColor: "#5B7FA680" }} />
+          <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "#5B7FA699" }}>
             Trusted By
           </span>
         </div>
@@ -24,7 +24,7 @@ export default function ClientsMarquee() {
         </h2>
       </div>
 
-      {/* Marquee Row 1 */}
+      {/* Marquee */}
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
@@ -36,7 +36,8 @@ export default function ClientsMarquee() {
           {[...clients, ...clients].map((client, i) => (
             <div
               key={i}
-              className="flex-shrink-0 px-8 py-4 border border-white/5 rounded-full bg-white/[0.02] backdrop-blur-sm"
+              className="flex-shrink-0 px-8 py-4 border rounded-full bg-white/[0.02] backdrop-blur-sm"
+              style={{ borderColor: "#5B7FA620" }}
             >
               <span className="text-sm text-white/40 font-medium tracking-wide">
                 {client}

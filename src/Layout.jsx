@@ -28,6 +28,13 @@ export default function Layout({ children, currentPageName }) {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
+      <style>{`
+        :root {
+          --brand-red: #B85040;
+          --brand-blue: #5B7FA6;
+        }
+      `}</style>
+
       {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -39,7 +46,7 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <Link to={createPageUrl("Home")} className="flex items-center gap-2">
             <span className="text-xl md:text-2xl font-bold tracking-tight">
-              <span className="text-amber-500">LEIT</span>MOTIV
+              <span style={{ color: "#B85040" }}>LEIT</span>MOTIV
             </span>
             <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 hidden sm:block">
               Film
@@ -52,9 +59,10 @@ export default function Layout({ children, currentPageName }) {
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
+                style={currentPageName === link.page ? { color: "#B85040" } : {}}
                 className={`text-sm tracking-wide transition-colors duration-300 ${
                   currentPageName === link.page
-                    ? "text-amber-500"
+                    ? ""
                     : "text-white/60 hover:text-white"
                 }`}
               >
@@ -68,13 +76,17 @@ export default function Layout({ children, currentPageName }) {
               href="https://instagram.com/leitmotiv_film"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/40 hover:text-amber-500 transition-colors"
+              className="text-white/40 transition-colors hover:text-white"
+              style={{ "--hover-color": "#B85040" }}
             >
               <Instagram className="w-4 h-4" />
             </a>
             <Link
               to={createPageUrl("Contact")}
-              className="bg-amber-500 hover:bg-amber-600 text-black text-xs font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
+              className="text-white text-xs font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
+              style={{ backgroundColor: "#B85040" }}
+              onMouseEnter={e => e.currentTarget.style.backgroundColor = "#9a3e30"}
+              onMouseLeave={e => e.currentTarget.style.backgroundColor = "#B85040"}
             >
               Get in Touch
             </Link>
@@ -109,8 +121,9 @@ export default function Layout({ children, currentPageName }) {
                 >
                   <Link
                     to={createPageUrl(link.page)}
+                    style={currentPageName === link.page ? { color: "#B85040" } : {}}
                     className={`text-2xl font-light tracking-wide ${
-                      currentPageName === link.page ? "text-amber-500" : "text-white/70"
+                      currentPageName === link.page ? "" : "text-white/70"
                     }`}
                   >
                     {link.name}
@@ -139,7 +152,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <div className="text-2xl font-bold tracking-tight mb-4">
-                <span className="text-amber-500">LEIT</span>MOTIV
+                <span style={{ color: "#B85040" }}>LEIT</span>MOTIV
                 <span className="text-white/30 text-sm ml-2 font-normal tracking-[0.3em]">
                   FILM
                 </span>
@@ -159,7 +172,7 @@ export default function Layout({ children, currentPageName }) {
                   <Link
                     key={link.page}
                     to={createPageUrl(link.page)}
-                    className="text-sm text-white/50 hover:text-amber-500 transition-colors"
+                    className="text-sm text-white/50 transition-colors hover:text-white"
                   >
                     {link.name}
                   </Link>
@@ -171,17 +184,17 @@ export default function Layout({ children, currentPageName }) {
                 Contact
               </h4>
               <div className="flex flex-col gap-2 text-sm text-white/50">
-                <a href="tel:+905553547585" className="hover:text-amber-500 transition-colors">
+                <a href="tel:+905553547585" className="hover:text-white transition-colors">
                   +90 555 354 75 85
                 </a>
-                <a href="mailto:info@leitmotivfilm.net" className="hover:text-amber-500 transition-colors">
+                <a href="mailto:info@leitmotivfilm.net" className="hover:text-white transition-colors">
                   info@leitmotivfilm.net
                 </a>
                 <a
                   href="https://instagram.com/leitmotiv_film"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-amber-500 transition-colors"
+                  className="hover:text-white transition-colors"
                 >
                   @leitmotiv_film
                 </a>

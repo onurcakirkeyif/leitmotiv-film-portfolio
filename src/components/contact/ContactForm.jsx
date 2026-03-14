@@ -48,7 +48,8 @@ export default function ContactForm() {
             required
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-amber-500/50"
+            className="bg-white/5 border-white/10 text-white placeholder:text-white/20"
+            style={{ "--focus-border": "#B8504080" }}
             placeholder="Your name"
           />
         </div>
@@ -61,7 +62,7 @@ export default function ContactForm() {
             type="email"
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-amber-500/50"
+            className="bg-white/5 border-white/10 text-white placeholder:text-white/20"
             placeholder="your@email.com"
           />
         </div>
@@ -74,7 +75,7 @@ export default function ContactForm() {
           <Input
             value={form.company}
             onChange={(e) => setForm({ ...form, company: e.target.value })}
-            className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-amber-500/50"
+            className="bg-white/5 border-white/10 text-white placeholder:text-white/20"
             placeholder="Company name"
           />
         </div>
@@ -107,14 +108,17 @@ export default function ContactForm() {
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           rows={5}
-          className="bg-white/5 border-white/10 text-white placeholder:text-white/20 focus:border-amber-500/50 resize-none"
+          className="bg-white/5 border-white/10 text-white placeholder:text-white/20 resize-none"
           placeholder="Tell us about your project..."
         />
       </div>
       <Button
         type="submit"
         disabled={sending}
-        className="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-3 rounded-full w-full sm:w-auto"
+        className="text-white font-semibold px-8 py-3 rounded-full w-full sm:w-auto border-0"
+        style={{ backgroundColor: "#B85040" }}
+        onMouseEnter={e => e.currentTarget.style.backgroundColor = "#9a3e30"}
+        onMouseLeave={e => e.currentTarget.style.backgroundColor = "#B85040"}
       >
         {sending ? (
           <><Loader2 className="w-4 h-4 mr-2 animate-spin" /> Sending...</>

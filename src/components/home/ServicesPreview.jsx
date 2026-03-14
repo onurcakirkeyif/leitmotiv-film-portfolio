@@ -25,8 +25,8 @@ export default function ServicesPreview() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-[1px] bg-amber-500/50" />
-              <span className="text-xs uppercase tracking-[0.3em] text-amber-500/60">
+              <div className="w-8 h-[1px]" style={{ backgroundColor: "#B8504080" }} />
+              <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "#B8504099" }}>
                 What We Do
               </span>
             </div>
@@ -38,7 +38,8 @@ export default function ServicesPreview() {
           </div>
           <Link
             to={createPageUrl("Services")}
-            className="flex items-center gap-2 text-amber-500 text-sm hover:gap-3 transition-all duration-300"
+            className="flex items-center gap-2 text-sm hover:gap-3 transition-all duration-300"
+            style={{ color: "#B85040" }}
           >
             View All Services <ArrowRight className="w-4 h-4" />
           </Link>
@@ -52,9 +53,12 @@ export default function ServicesPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-amber-500/20 transition-all duration-500"
+              className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-500"
+              style={{ "--hover-border": "#B8504033" }}
+              onMouseEnter={e => e.currentTarget.style.borderColor = "#B8504033"}
+              onMouseLeave={e => e.currentTarget.style.borderColor = "rgba(255,255,255,0.05)"}
             >
-              <service.icon className="w-8 h-8 text-amber-500/70 mb-4 group-hover:text-amber-500 transition-colors" />
+              <service.icon className="w-8 h-8 mb-4 transition-colors" style={{ color: "#B8504099" }} />
               <h3 className="text-white/90 font-semibold mb-1 text-sm">
                 {service.title}
               </h3>

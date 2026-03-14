@@ -29,15 +29,15 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-[1px] bg-amber-500" />
-            <span className="text-xs uppercase tracking-[0.3em] text-amber-500/80">
+            <div className="w-12 h-[1px]" style={{ backgroundColor: "#B85040" }} />
+            <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "#B85040cc" }}>
               About Us
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             The Story Behind
             <br />
-            <span className="font-serif italic text-amber-500">Leitmotiv Film</span>
+            <span className="font-serif italic" style={{ color: "#B85040" }}>Leitmotiv Film</span>
           </h1>
         </motion.div>
       </div>
@@ -95,7 +95,7 @@ export default function About() {
               transition={{ delay: i * 0.1 }}
               className="p-8 rounded-2xl border border-white/5 bg-white/[0.02] text-center"
             >
-              <stat.icon className="w-6 h-6 text-amber-500/70 mx-auto mb-3" />
+              <stat.icon className="w-6 h-6 mx-auto mb-3" style={{ color: "#B8504099" }} />
               <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
               <div className="text-xs text-white/40 uppercase tracking-wider">{stat.label}</div>
             </motion.div>
@@ -112,7 +112,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-3 h-3 bg-amber-500 rounded-full" />
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#B85040" }} />
               <h2 className="text-2xl font-bold text-white/90">Our Approach</h2>
             </div>
             <p className="text-white/50 leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default function About() {
           viewport={{ once: true }}
         >
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-3 h-3 bg-amber-500 rounded-full" />
+            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#B85040" }} />
             <h2 className="text-2xl font-bold text-white/90">International Experience</h2>
           </div>
           <p className="text-white/50 leading-relaxed max-w-3xl mb-8">
@@ -166,10 +166,11 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="p-10 rounded-2xl border border-amber-500/20 bg-amber-500/5"
+          className="p-10 rounded-2xl"
+          style={{ border: "1px solid #5B7FA633", backgroundColor: "#5B7FA60a" }}
         >
           <div className="flex items-center gap-3 mb-4">
-            <MapPin className="w-5 h-5 text-amber-500" />
+            <MapPin className="w-5 h-5" style={{ color: "#5B7FA6" }} />
             <h2 className="text-2xl font-bold text-white/90">Based in Istanbul, Working Across Türkiye</h2>
           </div>
           <p className="text-white/50 leading-relaxed max-w-3xl">

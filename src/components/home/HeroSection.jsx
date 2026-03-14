@@ -32,8 +32,8 @@ export default function HeroSection({ heroImage }) {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="flex items-center gap-3 mb-6"
           >
-            <div className="w-12 h-[1px] bg-amber-500" />
-            <span className="text-xs uppercase tracking-[0.3em] text-amber-500/80">
+            <div className="w-12 h-[1px]" style={{ backgroundColor: "#B85040" }} />
+            <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "#B85040cc" }}>
               Istanbul, Türkiye
             </span>
           </motion.div>
@@ -67,7 +67,10 @@ export default function HeroSection({ heroImage }) {
           >
             <Link
               to={createPageUrl("Contact")}
-              className="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-3.5 rounded-full text-sm transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20"
+              className="text-white font-semibold px-8 py-3.5 rounded-full text-sm transition-all duration-300"
+              style={{ backgroundColor: "#B85040" }}
+              onMouseEnter={e => e.currentTarget.style.backgroundColor = "#9a3e30"}
+              onMouseLeave={e => e.currentTarget.style.backgroundColor = "#B85040"}
             >
               Start Your Project
             </Link>
