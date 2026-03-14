@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Globe, MapPin, Award, Users } from "lucide-react";
 
-const ABOUT_IMG = "/__generating__/img_3fdfa54e80ed.png";
+const ABOUT_IMG = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69b50fc6b8611f01f5f27bf1/0357fea98_generated_0eff15a3.png";
 
 const stats = [
   { label: "International Clients", value: "25+", icon: Globe },
