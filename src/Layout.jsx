@@ -12,6 +12,9 @@ const navLinks = [
   { name: "Contact", page: "Contact" },
 ];
 
+const RED = "#B85040";
+const BLUE = "#5B7FA6";
+
 export default function Layout({ children, currentPageName }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -22,33 +25,21 @@ export default function Layout({ children, currentPageName }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [currentPageName]);
+  useEffect(() => { setMobileOpen(false); }, [currentPageName]);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
-      <style>{`
-        :root {
-          --brand-red: #B85040;
-          --brand-blue: #5B7FA6;
-        }
-      `}</style>
+    <div className="min-h-screen" style={{ backgroundColor: "#FAFAF9", color: "#141414" }}>
 
       {/* Navigation */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? "bg-[#0a0a0a]/95 backdrop-blur-md border-b border-white/5 py-3"
-            : "bg-transparent py-5"
-        }`}
-      >
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-3" : "bg-transparent py-5"
+      }`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <Link to={createPageUrl("Home")} className="flex items-center gap-2">
-            <span className="text-xl md:text-2xl font-bold tracking-tight">
-              <span style={{ color: "#B85040" }}>LEIT</span>MOTIV
+            <span className="text-xl md:text-2xl font-bold tracking-tight" style={{ color: "#141414" }}>
+              <span style={{ color: RED }}>LEIT</span>MOTIV
             </span>
-            <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 hidden sm:block">
+            <span className="text-[10px] uppercase tracking-[0.3em] hidden sm:block" style={{ color: "#9a9a9a" }}>
               Film
             </span>
           </Link>
@@ -59,12 +50,11 @@ export default function Layout({ children, currentPageName }) {
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
-                style={currentPageName === link.page ? { color: "#B85040" } : {}}
-                className={`text-sm tracking-wide transition-colors duration-300 ${
-                  currentPageName === link.page
-                    ? ""
-                    : "text-white/60 hover:text-white"
-                }`}
+                className="text-sm tracking-wide transition-colors duration-300"
+                style={{
+                  color: currentPageName === link.page ? RED : "#555",
+                  fontWeight: currentPageName === link.page ? 600 : 400,
+                }}
               >
                 {link.name}
               </Link>
@@ -76,26 +66,28 @@ export default function Layout({ children, currentPageName }) {
               href="https://instagram.com/leitmotiv_film"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/40 transition-colors hover:text-white"
-              style={{ "--hover-color": "#B85040" }}
+              className="transition-colors"
+              style={{ color: "#aaa" }}
+              onMouseEnter={e => e.currentTarget.style.color = RED}
+              onMouseLeave={e => e.currentTarget.style.color = "#aaa"}
             >
               <Instagram className="w-4 h-4" />
             </a>
             <Link
               to={createPageUrl("Contact")}
               className="text-white text-xs font-semibold px-5 py-2.5 rounded-full transition-all duration-300"
-              style={{ backgroundColor: "#B85040" }}
+              style={{ backgroundColor: RED }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = "#9a3e30"}
-              onMouseLeave={e => e.currentTarget.style.backgroundColor = "#B85040"}
+              onMouseLeave={e => e.currentTarget.style.backgroundColor = RED}
             >
               Get in Touch
             </Link>
           </div>
 
-          {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-white/70 hover:text-white"
+            className="md:hidden transition-colors"
+            style={{ color: "#555" }}
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -109,7 +101,7 @@ export default function Layout({ children, currentPageName }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-[#0a0a0a]/98 backdrop-blur-xl pt-24 px-8"
+            className="fixed inset-0 z-40 bg-white pt-24 px-8"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link, i) => (
@@ -121,16 +113,14 @@ export default function Layout({ children, currentPageName }) {
                 >
                   <Link
                     to={createPageUrl(link.page)}
-                    style={currentPageName === link.page ? { color: "#B85040" } : {}}
-                    className={`text-2xl font-light tracking-wide ${
-                      currentPageName === link.page ? "" : "text-white/70"
-                    }`}
+                    className="text-2xl font-light tracking-wide"
+                    style={{ color: currentPageName === link.page ? RED : "#333" }}
                   >
                     {link.name}
                   </Link>
                 </motion.div>
               ))}
-              <div className="mt-8 pt-8 border-t border-white/10 flex flex-col gap-3 text-white/50 text-sm">
+              <div className="mt-8 pt-8 border-t border-gray-100 flex flex-col gap-3 text-sm" style={{ color: "#777" }}>
                 <a href="tel:+905553547585" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" /> +90 555 354 75 85
                 </a>
@@ -147,32 +137,31 @@ export default function Layout({ children, currentPageName }) {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="bg-[#050505] border-t border-white/5">
+      <footer style={{ backgroundColor: "#1a1a1a", color: "white" }}>
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <div className="text-2xl font-bold tracking-tight mb-4">
-                <span style={{ color: "#B85040" }}>LEIT</span>MOTIV
-                <span className="text-white/30 text-sm ml-2 font-normal tracking-[0.3em]">
-                  FILM
-                </span>
+                <span style={{ color: RED }}>LEIT</span>MOTIV
+                <span className="text-sm ml-2 font-normal tracking-[0.3em]" style={{ color: "#666" }}>FILM</span>
               </div>
-              <p className="text-white/40 text-sm leading-relaxed max-w-md">
+              <p className="text-sm leading-relaxed max-w-md" style={{ color: "#888" }}>
                 Istanbul-based production company providing comprehensive production
                 and fixer services for international productions, broadcasters,
                 brands, and filmmakers working in Türkiye.
               </p>
             </div>
             <div>
-              <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 mb-4">
-                Quick Links
-              </h4>
+              <h4 className="text-xs uppercase tracking-[0.2em] mb-4" style={{ color: "#555" }}>Quick Links</h4>
               <div className="flex flex-col gap-2">
                 {navLinks.map((link) => (
                   <Link
                     key={link.page}
                     to={createPageUrl(link.page)}
-                    className="text-sm text-white/50 transition-colors hover:text-white"
+                    className="text-sm transition-colors"
+                    style={{ color: "#888" }}
+                    onMouseEnter={e => e.currentTarget.style.color = RED}
+                    onMouseLeave={e => e.currentTarget.style.color = "#888"}
                   >
                     {link.name}
                   </Link>
@@ -180,34 +169,17 @@ export default function Layout({ children, currentPageName }) {
               </div>
             </div>
             <div>
-              <h4 className="text-xs uppercase tracking-[0.2em] text-white/30 mb-4">
-                Contact
-              </h4>
-              <div className="flex flex-col gap-2 text-sm text-white/50">
-                <a href="tel:+905553547585" className="hover:text-white transition-colors">
-                  +90 555 354 75 85
-                </a>
-                <a href="mailto:info@leitmotivfilm.net" className="hover:text-white transition-colors">
-                  info@leitmotivfilm.net
-                </a>
-                <a
-                  href="https://instagram.com/leitmotiv_film"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  @leitmotiv_film
-                </a>
+              <h4 className="text-xs uppercase tracking-[0.2em] mb-4" style={{ color: "#555" }}>Contact</h4>
+              <div className="flex flex-col gap-2 text-sm" style={{ color: "#888" }}>
+                <a href="tel:+905553547585" className="hover:text-white transition-colors">+90 555 354 75 85</a>
+                <a href="mailto:info@leitmotivfilm.net" className="hover:text-white transition-colors">info@leitmotivfilm.net</a>
+                <a href="https://instagram.com/leitmotiv_film" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@leitmotiv_film</a>
               </div>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/20 text-xs">
-              © {new Date().getFullYear()} Leitmotiv Film. All rights reserved.
-            </p>
-            <p className="text-white/20 text-xs">
-              Kadıköy, Istanbul, Türkiye
-            </p>
+          <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4" style={{ borderColor: "#2a2a2a" }}>
+            <p className="text-xs" style={{ color: "#444" }}>© {new Date().getFullYear()} Leitmotiv Film. All rights reserved.</p>
+            <p className="text-xs" style={{ color: "#444" }}>Kadıköy, Istanbul, Türkiye</p>
           </div>
         </div>
       </footer>

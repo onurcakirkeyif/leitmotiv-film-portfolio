@@ -7,6 +7,9 @@ import {
   Shield, Banknote, Wrench, Package
 } from "lucide-react";
 
+const RED = "#B85040";
+const BLUE = "#5B7FA6";
+
 const productionServices = [
   { icon: Clapperboard, title: "Commercial Films", description: "High-impact commercials for global brands, from concept to final delivery." },
   { icon: Video, title: "Social Media Video", description: "Engaging video content tailored for digital platforms and social media campaigns." },
@@ -34,25 +37,19 @@ const supportServices = [
 
 export default function Services() {
   return (
-    <div className="pt-24 pb-20 bg-[#0a0a0a]">
+    <div className="pt-24 pb-20" style={{ backgroundColor: "#FAFAF9" }}>
       {/* Header */}
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-[1px]" style={{ backgroundColor: "#B85040" }} />
-            <span className="text-xs uppercase tracking-[0.3em]" style={{ color: "#B85040cc" }}>
-              Our Services
-            </span>
+            <div className="w-12 h-[1px]" style={{ backgroundColor: RED }} />
+            <span className="text-xs uppercase tracking-[0.3em] font-medium" style={{ color: RED }}>Our Services</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: "#141414" }}>
             What We
-            <span className="font-serif italic" style={{ color: "#B85040" }}> Offer</span>
+            <span className="font-serif italic" style={{ color: RED }}> Offer</span>
           </h1>
-          <p className="text-white/40 max-w-2xl text-lg leading-relaxed">
+          <p className="max-w-2xl text-lg leading-relaxed" style={{ color: "#666" }}>
             We provide a wide range of production and production support services
             for international productions, broadcasters, brands, and filmmakers.
           </p>
@@ -62,8 +59,8 @@ export default function Services() {
       {/* Production Services */}
       <div className="max-w-7xl mx-auto px-6 mb-20">
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#B85040" }} />
-          <h2 className="text-2xl font-bold text-white/90">Production</h2>
+          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: RED }} />
+          <h2 className="text-2xl font-bold" style={{ color: "#141414" }}>Production</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {productionServices.map((service, i) => (
@@ -75,8 +72,8 @@ export default function Services() {
       {/* Production Support */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#B85040" }} />
-          <h2 className="text-2xl font-bold text-white/90">Production Support</h2>
+          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: BLUE }} />
+          <h2 className="text-2xl font-bold" style={{ color: "#141414" }}>Production Support</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {supportServices.map((service, i) => (
