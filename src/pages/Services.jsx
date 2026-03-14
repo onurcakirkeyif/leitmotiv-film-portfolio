@@ -20,16 +20,16 @@ const productionServices = [
 ];
 
 const supportServices = [
-  { icon: MapPin, title: "Location Scouting & Permits", description: "We find the perfect filming locations and handle all necessary permits and paperwork so you can focus on the creative process." },
-  { icon: Users, title: "Casting & Crew", description: "From local talent to experienced film crews, we connect you with the right professionals to bring your vision to life." },
-  { icon: Truck, title: "Transportation & Accommodation", description: "We organize transportation and comfortable accommodation for your team to ensure a smooth and efficient production." },
-  { icon: Building2, title: "Production Office Setup", description: "We provide fully equipped production offices with everything your team needs as a base of operations." },
-  { icon: Scissors, title: "Post-Production Coordination", description: "From editing to visual effects, we help coordinate every stage of the post-production process." },
-  { icon: ShoppingCart, title: "Local Vendors & Catering", description: "Whether you need props, equipment, or catering services, we connect you with the best local suppliers." },
-  { icon: Shield, title: "Health & Safety", description: "We ensure a safe working environment with on-set medics and comprehensive safety protocols." },
-  { icon: Banknote, title: "Subsidies & Grants", description: "We assist productions in accessing local incentives and financial opportunities to maximize your production budget." },
-  { icon: Wrench, title: "Equipment & Technical Support", description: "Access the latest professional equipment and experienced technical teams for a seamless production." },
-  { icon: Package, title: "Customs & Shipping", description: "We handle equipment imports, exports, and customs clearance to ensure your production runs without delays." },
+  { icon: MapPin, title: "Location Scouting & Permits", description: "We uncover the perfect filming locations and handle all permits and paperwork, so your team can focus entirely on creativity." },
+  { icon: Users, title: "Casting & Crew", description: "From local talent to skilled production teams, we assemble the right people to bring your vision flawlessly to life." },
+  { icon: Truck, title: "Transportation & Accommodation", description: "Seamless logistics for your crew — we organize transportation and premium accommodations to keep everyone on schedule and energized." },
+  { icon: Building2, title: "Production Office Setup", description: "Need a base of operations? We provide fully equipped production offices ready for your team to work efficiently on set." },
+  { icon: Scissors, title: "Post-Production Coordination", description: "From editing to VFX, we oversee every stage of post-production, ensuring a smooth and timely delivery." },
+  { icon: ShoppingCart, title: "Local Vendors & Catering", description: "We connect you with the finest local vendors for props, equipment, and catering, so every detail of your shoot is handled professionally." },
+  { icon: Shield, title: "Health & Safety", description: "Your team's safety is our priority — on-set medics and comprehensive safety protocols keep your production risk-free." },
+  { icon: Banknote, title: "Subsidies & Grants", description: "We help unlock local incentives and funding opportunities, maximizing your production budget without compromise." },
+  { icon: Wrench, title: "Top-Tier Equipment & Technical Support", description: "Access cutting-edge gear and expert technical support to achieve flawless results on set." },
+  { icon: Package, title: "Customs & Shipping", description: "We manage all imports, exports, and customs logistics, ensuring equipment moves smoothly and your production stays on track." },
 ];
 
 export default function Services() {
