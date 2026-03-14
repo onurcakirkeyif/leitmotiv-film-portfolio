@@ -62,7 +62,7 @@ export default function Services() {
       {/* Production Services */}
       <div className="max-w-7xl mx-auto px-6 mb-20">
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-3 h-3 bg-amber-500 rounded-full" />
+          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#B85040" }} />
           <h2 className="text-2xl font-bold text-white/90">Production</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -75,7 +75,7 @@ export default function Services() {
       {/* Production Support */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-3 h-3 bg-amber-500 rounded-full" />
+          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#B85040" }} />
           <h2 className="text-2xl font-bold text-white/90">Production Support</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
