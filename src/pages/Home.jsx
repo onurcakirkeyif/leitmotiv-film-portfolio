@@ -92,6 +92,8 @@ export default function Home() {
         ))}
       </div>
 
+      <ClientsMarquee />
+
       {/* Footer strip */}
       <div className="border-t px-8 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs"
         style={{ borderColor: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.3)" }}>
