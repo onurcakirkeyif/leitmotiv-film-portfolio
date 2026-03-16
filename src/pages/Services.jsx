@@ -1,83 +1,93 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ServiceCard from "@/components/services/ServiceCard";
-import {
-  Film, Camera, Clapperboard, Mic, Video, Monitor, Tv, Music,
-  MapPin, Users, Truck, Building2, Scissors, ShoppingCart,
-  Shield, Banknote, Wrench, Package
-} from "lucide-react";
 
 const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
 const productionServices = [
-  { icon: Clapperboard, title: "Commercial Films", description: "High-impact commercials for global brands, from concept to final delivery." },
-  { icon: Video, title: "Social Media Video", description: "Engaging video content tailored for digital platforms and social media campaigns." },
-  { icon: Camera, title: "Drone Filming", description: "Breathtaking aerial cinematography showcasing Türkiye's stunning landscapes." },
-  { icon: Building2, title: "Corporate Films", description: "Professional corporate videos that communicate your brand story effectively." },
-  { icon: Camera, title: "Photography", description: "High-quality still photography for campaigns, editorial, and branded content." },
-  { icon: Film, title: "Feature & Short Films", description: "Full production services for narrative feature films and short films." },
-  { icon: Tv, title: "Reality Shows & TV", description: "End-to-end production support for reality shows and television programs." },
-  { icon: Music, title: "Music Videos", description: "Creative music video production with access to unique Turkish locations." },
-  { icon: Monitor, title: "Documentaries", description: "Compelling documentary production across diverse locations in Türkiye." },
+  "Commercial Films",
+  "Social Media Video",
+  "Drone Filming",
+  "Corporate Films",
+  "Photography",
+  "Feature & Short Films",
+  "Reality Shows & TV",
+  "Music Videos",
+  "Documentaries",
 ];
 
 const supportServices = [
-  { icon: MapPin, title: "Location Scouting & Permits", description: "We uncover the perfect filming locations and handle all permits and paperwork, so your team can focus entirely on creativity." },
-  { icon: Users, title: "Casting & Crew", description: "From local talent to skilled production teams, we assemble the right people to bring your vision flawlessly to life." },
-  { icon: Truck, title: "Transportation & Accommodation", description: "Seamless logistics for your crew — we organize transportation and premium accommodations to keep everyone on schedule and energized." },
-  { icon: Building2, title: "Production Office Setup", description: "Need a base of operations? We provide fully equipped production offices ready for your team to work efficiently on set." },
-  { icon: Scissors, title: "Post-Production Coordination", description: "From editing to VFX, we oversee every stage of post-production, ensuring a smooth and timely delivery." },
-  { icon: ShoppingCart, title: "Local Vendors & Catering", description: "We connect you with the finest local vendors for props, equipment, and catering, so every detail of your shoot is handled professionally." },
-  { icon: Shield, title: "Health & Safety", description: "Your team's safety is our priority — on-set medics and comprehensive safety protocols keep your production risk-free." },
-  { icon: Banknote, title: "Subsidies & Grants", description: "We help unlock local incentives and funding opportunities, maximizing your production budget without compromise." },
-  { icon: Wrench, title: "Top-Tier Equipment & Technical Support", description: "Access cutting-edge gear and expert technical support to achieve flawless results on set." },
-  { icon: Package, title: "Customs & Shipping", description: "We manage all imports, exports, and customs logistics, ensuring equipment moves smoothly and your production stays on track." },
+  "Location Scouting & Permits",
+  "Casting & Crew",
+  "Transportation & Accommodation",
+  "Production Office Setup",
+  "Post-Production Coordination",
+  "Local Vendors & Catering",
+  "Health & Safety",
+  "Subsidies & Grants",
+  "Top-Tier Equipment & Technical Support",
+  "Customs & Shipping",
 ];
 
 export default function Services() {
   return (
-    <div className="pt-24 pb-20" style={{ backgroundColor: "#FAFAF9" }}>
-      {/* Header */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-[1px]" style={{ backgroundColor: RED }} />
-            <span className="text-xs uppercase tracking-[0.3em] font-medium" style={{ color: RED }}>Our Services</span>
+    <div style={{ minHeight: "100vh" }}>
+      {/* Page title */}
+      <div className="px-8 pt-16 pb-8 border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+        <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>What We Do</p>
+        <h1 className="text-4xl font-bold uppercase tracking-tight text-white">Services</h1>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2" style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+        {/* Production */}
+        <div className="p-12 border-r" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+          <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: RED }}>Production</p>
+          <div className="space-y-0">
+            {productionServices.map((s, i) => (
+              <motion.div
+                key={s}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="py-4 border-b flex items-center justify-between group cursor-default"
+                style={{ borderColor: "rgba(255,255,255,0.06)" }}
+              >
+                <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s}</span>
+                <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+              </motion.div>
+            ))}
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: "#141414" }}>
-            What We
-            <span className="font-serif italic" style={{ color: RED }}> Offer</span>
-          </h1>
-          <p className="max-w-2xl text-lg leading-relaxed" style={{ color: "#666" }}>
-            We provide a wide range of production and production support services
-            for international productions, broadcasters, brands, and filmmakers.
-          </p>
-        </motion.div>
+        </div>
+
+        {/* Production Support */}
+        <div className="p-12">
+          <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: BLUE }}>Production Support</p>
+          <div className="space-y-0">
+            {supportServices.map((s, i) => (
+              <motion.div
+                key={s}
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="py-4 border-b flex items-center justify-between group cursor-default"
+                style={{ borderColor: "rgba(255,255,255,0.06)" }}
+              >
+                <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s}</span>
+                <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* Production Services */}
-      <div className="max-w-7xl mx-auto px-6 mb-20">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: RED }} />
-          <h2 className="text-2xl font-bold" style={{ color: "#141414" }}>Production</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {productionServices.map((service, i) => (
-            <ServiceCard key={service.title} {...service} index={i} />
-          ))}
-        </div>
-      </div>
-
-      {/* Production Support */}
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: BLUE }} />
-          <h2 className="text-2xl font-bold" style={{ color: "#141414" }}>Production Support</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {supportServices.map((service, i) => (
-            <ServiceCard key={service.title} {...service} index={i} />
+      {/* Clients strip */}
+      <div className="px-12 py-16">
+        <p className="text-[10px] uppercase tracking-[0.3em] mb-8 text-white/30">International Clients</p>
+        <div className="flex flex-wrap gap-x-8 gap-y-3">
+          {["Associated Press","BBC","CNN","Arte","Deutsche Welle","Financial Times","Vice","Canal+","Wall Street Journal","Microsoft","Coca-Cola","Shopify","Hyundai","Mango","Citroën","Decathlon","The Culture Trip"].map(c => (
+            <span key={c} className="text-sm text-white/40 hover:text-white transition-colors cursor-default">{c}</span>
           ))}
         </div>
       </div>
