@@ -84,8 +84,8 @@ const projects = [
 export default function Home() {
   return (
     <div>
-      {/* 2-column full-bleed project grid — exactly like Pulse Films */}
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      {/* 2-column project grid with gaps */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[3px]" style={{ backgroundColor: "#1a1a1a" }}>
         {projects.map((project, i) => (
           <ProjectTile key={i} project={project} index={i} />
         ))}
