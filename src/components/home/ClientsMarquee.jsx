@@ -34,7 +34,7 @@ export default function ClientsMarquee() {
               src={client.logo}
               alt={client.name}
               className="h-full w-auto object-contain"
-              style={{ filter: "brightness(0) invert(1)" }}
+              style={{ filter: "brightness(0) invert(0.7)" }}
             />
           </div>
         ))}
