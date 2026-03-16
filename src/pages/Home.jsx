@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
+import ClientsMarquee from "@/components/home/ClientsMarquee";
 
 const RED = "#B85040";
 
