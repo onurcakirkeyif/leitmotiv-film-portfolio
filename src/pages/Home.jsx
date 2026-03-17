@@ -80,6 +80,66 @@ const projects = [
     thumbnail: "https://i.ytimg.com/vi/Uqr09TlvVR0/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=Uqr09TlvVR0",
   },
+  {
+    title: "Winter Garden / Kış Bahçesi",
+    client: "Short Film",
+    thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640",
+    url: "https://vimeo.com/409533871",
+  },
+  {
+    title: "The Return / Dönüş – Mood Teaser",
+    client: "Short Film",
+    thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640",
+    url: "https://vimeo.com/810633919",
+  },
+  {
+    title: "Nuova Hyundai BAYON",
+    client: "Hyundai",
+    thumbnail: "https://i.vimeocdn.com/video/1117256398-c03bc6eb4e362a67880db7eda536ce0f9fd4aaa0eb678bbc85252b6f79402146-d_640",
+    url: "https://vimeo.com/539660481",
+  },
+  {
+    title: "Unbound Turkey",
+    client: "Documentary",
+    thumbnail: "https://i.vimeocdn.com/video/2086033384-3dd0afebb066ed0276f1c36b9c3e3b6dc980785fa6fb582f26d3a5ffa3a1d917-d_640",
+    url: "https://vimeo.com/1137882885/118edd0fef",
+  },
+  {
+    title: "Stitched Up? Surgery in The Sun",
+    client: "BBC Northern Ireland",
+    thumbnail: "https://i.ytimg.com/vi/XZYeZjnaaNw/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=XZYeZjnaaNw",
+  },
+  {
+    title: "Exploring Turkey",
+    client: "Getaway / Channel 9",
+    thumbnail: "https://i.ytimg.com/vi/lX3W9VUpx3k/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=lX3W9VUpx3k",
+  },
+  {
+    title: "Ages of Globalization",
+    client: "Documentary",
+    thumbnail: "https://i.ytimg.com/vi/vhyYKouSzmY/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=vhyYKouSzmY",
+  },
+  {
+    title: "Mümkün Değil",
+    client: "Eskiz",
+    thumbnail: "https://i.ytimg.com/vi/tqJU5UQlUmM/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=tqJU5UQlUmM",
+  },
+  {
+    title: "Lucifer, My Love",
+    client: "LiNANiL",
+    thumbnail: "https://i.ytimg.com/vi/V7l-edRGNwU/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=V7l-edRGNwU",
+  },
+  {
+    title: "It's Our Day MV",
+    client: "Yoo Yong Min / Stone Music",
+    thumbnail: "https://i.ytimg.com/vi/EUnCZJByYy8/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=EUnCZJByYy8",
+  },
 ];
 
 export default function Home() {
