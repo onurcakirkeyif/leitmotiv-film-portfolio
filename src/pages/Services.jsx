@@ -48,7 +48,7 @@ export default function Services() {
       <div className="grid grid-cols-1 md:grid-cols-2" style={{ borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
         {/* Production */}
         <div className="p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
-          <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: RED }}>Production</p>
+          <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-8" style={{ color: RED }}>Production</p>
           <div className="space-y-0">
             {productionServices.map((s, i) => (
               <motion.div
@@ -73,7 +73,7 @@ export default function Services() {
 
                   {/* Production Support */}
                   <div className="p-12">
-                  <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: BLUE }}>Production Support</p>
+                  <p className="text-[11px] font-bold uppercase tracking-[0.25em] mb-8" style={{ color: BLUE }}>Production Support</p>
                   <div className="space-y-0">
                   {supportServices.map((s, i) => (
                   <motion.div
