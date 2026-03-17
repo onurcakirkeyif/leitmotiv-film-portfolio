@@ -76,7 +76,7 @@ export default function About() {
               <p className="text-[10px] uppercase tracking-[0.3em] mb-3" style={{ color: BLUE }}>Location</p>
               <p className="text-sm leading-relaxed" style={{ color: "rgba(0,0,0,0.55)" }}>
                 Caferağa Mah. Sakızgülü Sok.<br />
-                Sevin Apt. 29A Floor 1<br />
+                Sevin Apt. 29A Floor -1<br />
                 Kadıköy, Istanbul, Türkiye
               </p>
             </div>
