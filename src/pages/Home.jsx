@@ -140,6 +140,12 @@ const projects = [
     thumbnail: "https://i.ytimg.com/vi/EUnCZJByYy8/maxresdefault.jpg",
     url: "https://www.youtube.com/watch?v=EUnCZJByYy8",
   },
+  {
+    title: "Bir Araya Gel",
+    client: "Eskiz",
+    thumbnail: "https://i.ytimg.com/vi/9e1JkoZxGEc/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=9e1JkoZxGEc",
+  },
 ];
 
 export default function Home() {

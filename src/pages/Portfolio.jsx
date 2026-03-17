@@ -27,6 +27,7 @@ const projects = [
   { title: "Mümkün Değil", client: "Eskiz", thumbnail: "https://i.ytimg.com/vi/tqJU5UQlUmM/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=tqJU5UQlUmM" },
   { title: "Lucifer, My Love", client: "LiNANiL", thumbnail: "https://i.ytimg.com/vi/V7l-edRGNwU/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=V7l-edRGNwU" },
   { title: "It's Our Day MV", client: "Yoo Yong Min / Stone Music", thumbnail: "https://i.ytimg.com/vi/EUnCZJByYy8/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=EUnCZJByYy8" },
+  { title: "Bir Araya Gel", client: "Eskiz", thumbnail: "https://i.ytimg.com/vi/9e1JkoZxGEc/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=9e1JkoZxGEc" },
 ];
 
 export default function Portfolio() {
