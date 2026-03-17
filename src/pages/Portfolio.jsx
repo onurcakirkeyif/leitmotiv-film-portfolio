@@ -9,7 +9,7 @@ const projects = [
   { title: "Sundance Villa – Summer Collection", client: "MINDTHEGAP", thumbnail: "https://i.ytimg.com/vi_webp/r2jiGDiULWA/maxresdefault.webp", url: "https://www.youtube.com/watch?v=r2jiGDiULWA" },
   { title: "Citroën Campaign – Istanbul", client: "Citroën", thumbnail: "https://i.vimeocdn.com/video/2128933241-1f7c34b56d9e108ffb8cf29eef9e87a894c6a17e5ae40d94683465aa89697a18-d?mw=640&q=85", url: "https://vimeo.com/1169974748/e10fd89403" },
   { title: "Rush – Reality Series", client: "Endemol Shine", thumbnail: "https://i.ytimg.com/vi/OMzsNGfR13Y/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=OMzsNGfR13Y" },
-  { title: "Winter Garden / Kış Bahçesi", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640", url: "https://vimeo.com/409533871" },
+  { title: "Winter Garden / Kış Bahçesi", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640", url: "https://vimeo.com/796354251" },
   { title: "Turquie, le culte de la beauté?", client: "Arte / Tataki", thumbnail: "https://i.ytimg.com/vi_webp/Mpij5JhuLrI/maxresdefault.webp", url: "https://www.youtube.com/watch?v=Mpij5JhuLrI" },
   { title: "The Return / Dönüş", client: "Mood Teaser", thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640", url: "https://vimeo.com/810633919" },
   { title: "Bebemoss Story", client: "Shopify", thumbnail: "https://i.ytimg.com/vi_webp/TpBNceZbHKE/maxresdefault.webp", url: "https://www.youtube.com/watch?v=TpBNceZbHKE" },

@@ -41,7 +41,7 @@ const projects = [
     title: "Winter Garden / Kış Bahçesi",
     client: "Short Film",
     thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640",
-    url: "https://vimeo.com/409533871",
+    url: "https://vimeo.com/796354251",
   },
   {
     title: "Turquie, le culte de la beauté?",
