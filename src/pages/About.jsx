@@ -6,7 +6,7 @@ import { createPageUrl } from "@/utils";
 const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
-const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27bf1/c565c5cb2_son.png";
+const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27bf1/1c65844aa_Gemini_Generated_Image_ebjrp8ebjrp8ebjr.png";
 
 export default function About() {
   return (
@@ -21,12 +21,12 @@ export default function About() {
             className="uppercase leading-none"
             style={{
               fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
-              letterSpacing: "0.3em",
-              fontWeight: 600,
+              letterSpacing: "0.25em",
+              fontWeight: 700,
               color: "#111",
             }}
           >
-            Leitmotiv Film
+            <span style={{ color: RED }}>L</span>EITMOTIV FILM
           </h1>
         </div>
       </div>
