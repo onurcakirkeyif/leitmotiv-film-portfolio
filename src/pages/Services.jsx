@@ -63,32 +63,32 @@ export default function Services() {
                   className="py-4 border-b flex items-center justify-between group"
                   style={{ borderColor: "rgba(0,0,0,0.08)" }}
                 >
-                  <span className="text-xl font-bold uppercase tracking-tight group-hover:opacity-50 transition-opacity" style={{ color: "#111" }}>{s.label}</span>
-                  <span className="transition-colors text-lg" style={{ color: "rgba(0,0,0,0.25)" }}>→</span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+                  <span className="text-sm font-bold uppercase tracking-[0.25em] group-hover:opacity-50 transition-opacity" style={{ color: "#111" }}>{s.label}</span>
+                  <span className="transition-colors text-sm" style={{ color: "rgba(0,0,0,0.25)" }}>→</span>
+                  </Link>
+                  </motion.div>
+                  ))}
+                  </div>
+                  </div>
 
-        {/* Production Support */}
-        <div className="p-12">
-          <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: BLUE }}>Production Support</p>
-          <div className="space-y-0">
-            {supportServices.map((s, i) => (
-              <motion.div
-                key={s.slug}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-              >
-                <Link
+                  {/* Production Support */}
+                  <div className="p-12">
+                  <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: BLUE }}>Production Support</p>
+                  <div className="space-y-0">
+                  {supportServices.map((s, i) => (
+                  <motion.div
+                  key={s.slug}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05 }}
+                  >
+                  <Link
                   to={`/ServiceDetail/${s.slug}`}
                   className="py-4 border-b flex items-center justify-between group"
                   style={{ borderColor: "rgba(0,0,0,0.08)" }}
-                >
-                  <span className="text-xl font-bold uppercase tracking-tight group-hover:opacity-50 transition-opacity" style={{ color: "#111" }}>{s.label}</span>
+                  >
+                  <span className="text-sm font-bold uppercase tracking-[0.25em] group-hover:opacity-50 transition-opacity" style={{ color: "#111" }}>{s.label}</span>
                   <span className="transition-colors text-lg" style={{ color: "rgba(0,0,0,0.25)" }}>→</span>
                 </Link>
               </motion.div>
