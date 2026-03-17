@@ -7,8 +7,8 @@ const RED = "#B85040";
 const inputStyle = {
   backgroundColor: "transparent",
   border: "none",
-  borderBottom: "1px solid rgba(255,255,255,0.15)",
-  color: "white",
+  borderBottom: "1px solid rgba(0,0,0,0.15)",
+  color: "#111",
   padding: "12px 0",
   width: "100%",
   outline: "none",
@@ -19,7 +19,7 @@ const labelStyle = {
   fontSize: "10px",
   textTransform: "uppercase",
   letterSpacing: "0.2em",
-  color: "rgba(255,255,255,0.3)",
+  color: "rgba(0,0,0,0.35)",
   display: "block",
   marginBottom: "4px",
 };
@@ -45,8 +45,8 @@ export default function ContactForm() {
     return (
       <div className="flex flex-col items-start gap-4 py-12">
         <CheckCircle className="w-10 h-10" style={{ color: RED }} />
-        <h3 className="text-2xl font-bold uppercase text-white">Message Sent</h3>
-        <p className="text-white/40 text-sm">Thank you. We'll be in touch soon.</p>
+        <h3 className="text-2xl font-bold uppercase" style={{ color: "#111" }}>Message Sent</h3>
+        <p className="text-sm" style={{ color: "rgba(0,0,0,0.4)" }}>Thank you. We'll be in touch soon.</p>
       </div>
     );
   }
@@ -56,21 +56,21 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label style={labelStyle}>Full Name *</label>
-          <input required style={inputStyle} value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} placeholder="Your name" className="placeholder-white/20" />
+          <input required style={inputStyle} value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} placeholder="Your name" className="placeholder-black/20" />
         </div>
         <div>
           <label style={labelStyle}>Email *</label>
-          <input required type="email" style={inputStyle} value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} placeholder="your@email.com" className="placeholder-white/20" />
+          <input required type="email" style={inputStyle} value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} placeholder="your@email.com" className="placeholder-black/20" />
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label style={labelStyle}>Company</label>
-          <input style={inputStyle} value={form.company} onChange={e => setForm({ ...form, company: e.target.value })} placeholder="Company name" className="placeholder-white/20" />
+          <input style={inputStyle} value={form.company} onChange={e => setForm({ ...form, company: e.target.value })} placeholder="Company name" className="placeholder-black/20" />
         </div>
         <div>
           <label style={labelStyle}>Project Type</label>
-          <input style={inputStyle} value={form.service} onChange={e => setForm({ ...form, service: e.target.value })} placeholder="Commercial, Documentary, Fixer…" className="placeholder-white/20" />
+          <input style={inputStyle} value={form.service} onChange={e => setForm({ ...form, service: e.target.value })} placeholder="Commercial, Documentary, Fixer…" className="placeholder-black/20" />
         </div>
       </div>
       <div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={e => setForm({ ...form, message: e.target.value })}
           placeholder="Tell us about your project..."
-          className="placeholder-white/20"
+          className="placeholder-black/20"
         />
       </div>
       <button

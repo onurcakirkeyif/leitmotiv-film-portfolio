@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// Color logos via Clearbit Logo API + known CDN sources
 const clients = [
   { name: "BBC", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/BBC_logo_%282021%29.svg/320px-BBC_logo_%282021%29.svg.png" },
   { name: "CNN", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/320px-CNN.svg.png" },
@@ -22,19 +21,19 @@ const clients = [
 
 export default function ClientsMarquee() {
   return (
-    <div className="overflow-hidden py-8 border-t border-b" style={{ borderColor: "rgba(255,255,255,0.06)", backgroundColor: "#0d0d0d" }}>
+    <div className="overflow-hidden py-8 border-t border-b" style={{ borderColor: "rgba(0,0,0,0.08)", backgroundColor: "#f5f2ee" }}>
       <motion.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
         className="flex items-center gap-12 whitespace-nowrap"
       >
         {[...clients, ...clients].map((client, i) => (
-          <div key={i} className="flex-shrink-0 h-8 flex items-center opacity-40 hover:opacity-80 transition-opacity">
+          <div key={i} className="flex-shrink-0 h-8 flex items-center opacity-30 hover:opacity-60 transition-opacity">
             <img
               src={client.logo}
               alt={client.name}
               className="h-full w-auto object-contain"
-              style={{ filter: "brightness(0) invert(0.7)" }}
+              style={{ filter: "brightness(0) opacity(1)" }}
             />
           </div>
         ))}
