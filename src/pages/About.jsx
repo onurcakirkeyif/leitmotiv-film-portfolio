@@ -18,15 +18,15 @@ export default function About() {
         <div className="absolute bottom-10 left-8">
           <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>About</p>
           <h1
-            className="font-bold uppercase leading-none"
+            className="uppercase leading-none"
             style={{
-              fontSize: "clamp(2rem, 6vw, 5rem)",
-              letterSpacing: "0.25em",
-              fontWeight: 700,
+              fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+              letterSpacing: "0.3em",
+              fontWeight: 600,
               color: "#111",
             }}
           >
-            Leitmotiv<br />Film
+            Leitmotiv Film
           </h1>
         </div>
       </div>
