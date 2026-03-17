@@ -29,26 +29,7 @@ export default function About() {
           </h1>
         </div>
 
-        {/* Right: illustration cropped, triangular composition */}
-        <div className="relative md:w-1/2 overflow-hidden" style={{ minHeight: "420px", backgroundColor: "#f5f2ee" }}>
-          {/* We crop the image to show the three illustrations in a tight triangle arrangement */}
-          <img
-            src={ABOUT_IMG}
-            alt="Istanbul illustrations"
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "100%",
-              height: "100%",
-              objectFit: "contain",
-              objectPosition: "center center",
-            }}
-          />
-          {/* Subtle fade on left edge to blend with page */}
-          <div className="absolute inset-y-0 left-0 w-16" style={{ background: "linear-gradient(to right, #f5f2ee, transparent)" }} />
-        </div>
+        <div className="md:w-1/2" />
       </div>
 
       {/* Content */}
