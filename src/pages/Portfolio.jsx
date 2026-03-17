@@ -12,7 +12,7 @@ const projects = [
   { title: "Turquie, le culte de la beauté?", client: "Arte / Tataki", thumbnail: "https://i.ytimg.com/vi_webp/Mpij5JhuLrI/maxresdefault.webp", url: "https://www.youtube.com/watch?v=Mpij5JhuLrI" },
   { title: "Winter Garden / Kış Bahçesi", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640", url: "https://vimeo.com/409533871" },
   { title: "The Lord of the Mussels", client: "The Culture Trip", thumbnail: "https://i.ytimg.com/vi/YniHplbiGnc/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=YniHplbiGnc" },
-  { title: "The Return / Dönüş", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640", url: "https://vimeo.com/810633919" },
+  { title: "The Return / Dönüş", client: "Mood Teaser", thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640", url: "https://vimeo.com/810633919" },
   { title: "Trial & Triumph: Seven Churches", client: "Appian Media", thumbnail: "https://i.ytimg.com/vi/apMj6heeibo/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=apMj6heeibo" },
   { title: "One Love", client: "Coca-Cola / Coke Studio", thumbnail: "https://i.ytimg.com/vi/Ul37EtOMh8U/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=Ul37EtOMh8U" },
   { title: "Rush – Reality Series", client: "Endemol Shine", thumbnail: "https://i.ytimg.com/vi/OMzsNGfR13Y/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=OMzsNGfR13Y" },

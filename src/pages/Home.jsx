@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: "The Return / Dönüş",
-    client: "Short Film",
+    client: "Mood Teaser",
     thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640",
     url: "https://vimeo.com/810633919",
   },
