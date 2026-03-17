@@ -1,32 +1,34 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
 const productionServices = [
-  "Commercial Films",
-  "Social Media Video",
-  "Drone Filming",
-  "Corporate Films",
-  "Photography",
-  "Feature & Short Films",
-  "Reality Shows & TV",
-  "Music Videos",
-  "Documentaries",
+  { label: "Commercial Films", slug: "commercial-films" },
+  { label: "Feature Films & Short Films", slug: "feature-films-short-films" },
+  { label: "TV Programs", slug: "tv-programs" },
+  { label: "Documentaries", slug: "documentaries" },
+  { label: "Reality Shows", slug: "reality-shows" },
+  { label: "Corporate Films", slug: "corporate-films" },
+  { label: "Music Videos", slug: "music-videos" },
+  { label: "Social Media Video Production", slug: "social-media-video-production" },
+  { label: "Photography", slug: "photography" },
+  { label: "Drone Filming", slug: "drone-filming" },
 ];
 
 const supportServices = [
-  "Location Scouting & Permits",
-  "Casting & Crew",
-  "Transportation & Accommodation",
-  "Production Office Setup",
-  "Post-Production Coordination",
-  "Local Vendors & Catering",
-  "Health & Safety",
-  "Subsidies & Grants",
-  "Top-Tier Equipment & Technical Support",
-  "Customs & Shipping",
+  { label: "Location Scouting & Permits", slug: "location-scouting-permits" },
+  { label: "Casting & Crew", slug: "casting-crew" },
+  { label: "Transportation & Accommodation", slug: "transportation-accommodation" },
+  { label: "Production Office Setup", slug: "production-office-setup" },
+  { label: "Post-Production Coordination", slug: "post-production-coordination" },
+  { label: "Local Vendors & Catering", slug: "local-vendors-catering" },
+  { label: "Health & Safety", slug: "health-safety" },
+  { label: "Subsidies & Grants", slug: "subsidies-grants" },
+  { label: "Top-Tier Equipment & Technical Support", slug: "equipment-technical-support" },
+  { label: "Customs & Shipping", slug: "customs-shipping" },
 ];
 
 export default function Services() {
@@ -45,16 +47,20 @@ export default function Services() {
           <div className="space-y-0">
             {productionServices.map((s, i) => (
               <motion.div
-                key={s}
+                key={s.slug}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="py-4 border-b flex items-center justify-between group cursor-default"
-                style={{ borderColor: "rgba(255,255,255,0.06)" }}
               >
-                <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s}</span>
-                <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+                <Link
+                  to={`/ServiceDetail/${s.slug}`}
+                  className="py-4 border-b flex items-center justify-between group"
+                  style={{ borderColor: "rgba(255,255,255,0.06)" }}
+                >
+                  <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s.label}</span>
+                  <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -66,16 +72,20 @@ export default function Services() {
           <div className="space-y-0">
             {supportServices.map((s, i) => (
               <motion.div
-                key={s}
+                key={s.slug}
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="py-4 border-b flex items-center justify-between group cursor-default"
-                style={{ borderColor: "rgba(255,255,255,0.06)" }}
               >
-                <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s}</span>
-                <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+                <Link
+                  to={`/ServiceDetail/${s.slug}`}
+                  className="py-4 border-b flex items-center justify-between group"
+                  style={{ borderColor: "rgba(255,255,255,0.06)" }}
+                >
+                  <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s.label}</span>
+                  <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+                </Link>
               </motion.div>
             ))}
           </div>
