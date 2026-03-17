@@ -211,7 +211,7 @@ function ProjectTile({ project, index }) {
         <p className="text-[10px] uppercase tracking-[0.2em] mb-1" style={{ color: RED }}>
           {project.client}
         </p>
-        <h3 className="text-sm font-bold uppercase tracking-wide text-white leading-snug">
+        <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-white leading-snug">
           {project.title}
         </h3>
       </div>

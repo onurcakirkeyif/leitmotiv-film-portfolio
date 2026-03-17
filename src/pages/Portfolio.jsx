@@ -65,7 +65,7 @@ export default function Portfolio() {
             <div className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100" style={{ backgroundColor: "rgba(0,0,0,0.35)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-5" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)" }}>
               <p className="text-[10px] uppercase tracking-[0.2em] mb-1" style={{ color: RED }}>{project.client}</p>
-              <h3 className="text-sm font-bold uppercase tracking-wide text-white leading-snug">{project.title}</h3>
+              <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-white leading-snug">{project.title}</h3>
             </div>
           </motion.a>
         ))}
