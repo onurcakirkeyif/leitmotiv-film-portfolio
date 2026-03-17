@@ -6,7 +6,7 @@ import { createPageUrl } from "@/utils";
 const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
-const ABOUT_IMG = "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1800&q=85";
+const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27bf1/23de6e294_generated_image.png";
 
 export default function About() {
   return (
