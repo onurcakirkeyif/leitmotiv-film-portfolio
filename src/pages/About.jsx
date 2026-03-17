@@ -6,7 +6,6 @@ import { createPageUrl } from "@/utils";
 const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
-const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27bf1/6970437fb_Gemini_Generated_Image_ebjrp8ebjrp8ebjr1.jpg";
 
 export default function About() {
   return (
