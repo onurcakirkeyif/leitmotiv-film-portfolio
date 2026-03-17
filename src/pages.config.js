@@ -52,6 +52,7 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ServiceDetail from './pages/ServiceDetail';
 import __Layout from './Layout.jsx';
 
 

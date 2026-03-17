@@ -29,6 +29,7 @@ const projects = [
   { title: "It's Our Day MV", client: "Yoo Yong Min / Stone Music", thumbnail: "https://i.ytimg.com/vi/EUnCZJByYy8/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=EUnCZJByYy8" },
   { title: "Bir Araya Gel", client: "Eskiz", thumbnail: "https://i.ytimg.com/vi/9e1JkoZxGEc/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=9e1JkoZxGEc" },
   { title: "Alo in the Wild: Turkey", client: "Alo Yoga", thumbnail: "https://d357mttm70bw7x.cloudfront.net/normal_19663957-3b41-435a-92fd-d69cd0127d0a.jpg", url: "https://wellnessclub.aloyoga.com/series/alo-in-the-wild-turkey" },
+  { title: "Post-Production", client: "Mustafa Deniz", thumbnail: "https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?w=1280&q=80", url: "https://www.mustafadeniz.net/post-production" },
 ];
 
 export default function Portfolio() {
