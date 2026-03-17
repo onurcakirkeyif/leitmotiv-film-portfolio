@@ -60,9 +60,9 @@ const AuthenticatedApp = () => {
         />
       ))}
       <Route path="/ServiceDetail/:slug" element={
-        <Layout currentPageName="Services">
+        <AppLayout currentPageName="Services">
           <ServiceDetail />
-        </Layout>
+        </AppLayout>
       } />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
