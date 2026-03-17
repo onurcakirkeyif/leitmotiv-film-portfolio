@@ -35,18 +35,18 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
         <div className="p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="leading-relaxed text-base mb-6" style={{ color: "rgba(0,0,0,0.55)" }}>
+            <p className="leading-relaxed text-base mb-6 text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
               Leitmotiv Film is an Istanbul-based production company providing
               comprehensive production and fixer services for international
               productions, broadcasters, brands, and filmmakers working in Türkiye.
             </p>
-            <p className="leading-relaxed text-base mb-6" style={{ color: "rgba(0,0,0,0.55)" }}>
+            <p className="leading-relaxed text-base mb-6 text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
               With extensive experience supporting global media organizations and
               international crews, we specialize in delivering high-quality production
               services across commercials, documentaries, television programs, branded
               content, and feature films.
             </p>
-            <p className="leading-relaxed text-base" style={{ color: "rgba(0,0,0,0.55)" }}>
+            <p className="leading-relaxed text-base text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
               Our team combines creative expertise with deep local knowledge, allowing
               us to manage every stage of production efficiently — from initial planning
               and location scouting to filming, logistics, and post-production coordination.
