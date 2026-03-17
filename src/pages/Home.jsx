@@ -68,12 +68,6 @@ const projects = [
     url: "https://www.youtube.com/watch?v=wF2CI-AZ19E",
   },
   {
-    title: "Winter Garden / Kış Bahçesi",
-    client: "Short Film",
-    thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640",
-    url: "https://vimeo.com/409533871",
-  },
-  {
     title: "The Lord of the Mussels",
     client: "The Culture Trip",
     thumbnail: "https://i.ytimg.com/vi/YniHplbiGnc/maxresdefault.jpg",
