@@ -4,24 +4,24 @@
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 98%;
+    --background: 30 20% 95%;
+    --foreground: 0 0% 7%;
+    --card: 30 20% 95%;
+    --card-foreground: 0 0% 7%;
+    --popover: 30 20% 95%;
+    --popover-foreground: 0 0% 7%;
     --primary: 10 50% 47%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 63%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
     --accent: 210 30% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
+    --border: 0 0% 82%;
+    --input: 0 0% 82%;
     --ring: 10 50% 47%;
     --radius: 0.25rem;
   }
@@ -33,23 +33,22 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #0d0d0d;
-    color: #fff;
+    background-color: #f5f2ee;
+    color: #111;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
 
 html { scroll-behavior: smooth; }
 
-/* Remove default input styles for dark form */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-  -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px #0d0d0d inset;
+  -webkit-text-fill-color: #111;
+  -webkit-box-shadow: 0 0 0px 1000px #f5f2ee inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
 ::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: #0d0d0d; }
-::-webkit-scrollbar-thumb { background: #333; }
+::-webkit-scrollbar-track { background: #f5f2ee; }
+::-webkit-scrollbar-thumb { background: #ccc; }

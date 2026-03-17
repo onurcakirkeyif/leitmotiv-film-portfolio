@@ -35,14 +35,19 @@ export default function Services() {
   return (
     <div style={{ minHeight: "100vh" }}>
       {/* Page title */}
-      <div className="px-8 pt-16 pb-8 border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+      <div className="px-8 pt-16 pb-8 border-b" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
         <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>What We Do</p>
-        <h1 className="text-4xl font-bold uppercase tracking-tight text-white">Services</h1>
+        <h1
+          className="font-bold uppercase"
+          style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)", letterSpacing: "0.25em", color: "#111" }}
+        >
+          Services
+        </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2" style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2" style={{ borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
         {/* Production */}
-        <div className="p-12 border-r" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+        <div className="p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
           <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: RED }}>Production</p>
           <div className="space-y-0">
             {productionServices.map((s, i) => (
@@ -56,10 +61,10 @@ export default function Services() {
                 <Link
                   to={`/ServiceDetail/${s.slug}`}
                   className="py-4 border-b flex items-center justify-between group"
-                  style={{ borderColor: "rgba(255,255,255,0.06)" }}
+                  style={{ borderColor: "rgba(0,0,0,0.08)" }}
                 >
-                  <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s.label}</span>
-                  <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+                  <span className="text-xl font-bold uppercase tracking-tight group-hover:opacity-50 transition-opacity" style={{ color: "#111" }}>{s.label}</span>
+                  <span className="transition-colors text-lg" style={{ color: "rgba(0,0,0,0.25)" }}>→</span>
                 </Link>
               </motion.div>
             ))}
@@ -81,10 +86,10 @@ export default function Services() {
                 <Link
                   to={`/ServiceDetail/${s.slug}`}
                   className="py-4 border-b flex items-center justify-between group"
-                  style={{ borderColor: "rgba(255,255,255,0.06)" }}
+                  style={{ borderColor: "rgba(0,0,0,0.08)" }}
                 >
-                  <span className="text-xl font-bold uppercase tracking-tight text-white/80 group-hover:text-white transition-colors">{s.label}</span>
-                  <span className="text-white/20 group-hover:text-white/60 transition-colors text-lg">→</span>
+                  <span className="text-xl font-bold uppercase tracking-tight group-hover:opacity-50 transition-opacity" style={{ color: "#111" }}>{s.label}</span>
+                  <span className="transition-colors text-lg" style={{ color: "rgba(0,0,0,0.25)" }}>→</span>
                 </Link>
               </motion.div>
             ))}
@@ -94,10 +99,10 @@ export default function Services() {
 
       {/* Clients strip */}
       <div className="px-12 py-16">
-        <p className="text-[10px] uppercase tracking-[0.3em] mb-8 text-white/30">International Clients</p>
+        <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: "rgba(0,0,0,0.3)" }}>International Clients</p>
         <div className="flex flex-wrap gap-x-8 gap-y-3">
           {["Associated Press","BBC","CNN","Arte","Deutsche Welle","Financial Times","Vice","Canal+","Wall Street Journal","Microsoft","Coca-Cola","Shopify","Hyundai","Mango","Citroën","Decathlon","The Culture Trip"].map(c => (
-            <span key={c} className="text-sm text-white/40 hover:text-white transition-colors cursor-default">{c}</span>
+            <span key={c} className="text-sm cursor-default transition-opacity hover:opacity-100" style={{ color: "rgba(0,0,0,0.4)" }}>{c}</span>
           ))}
         </div>
       </div>
