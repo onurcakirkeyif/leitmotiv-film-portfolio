@@ -14,31 +14,39 @@ export default function About() {
       {/* Full-bleed image */}
       <div className="relative w-full" style={{ height: "60vh" }}>
         <img src={ABOUT_IMG} alt="Leitmotiv Film" className="w-full h-full object-cover" />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, #0d0d0d 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, #f5f2ee 100%)" }} />
         <div className="absolute bottom-10 left-8">
           <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>About</p>
-          <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight text-white leading-none">
+          <h1
+            className="font-bold uppercase leading-none"
+            style={{
+              fontSize: "clamp(2rem, 6vw, 5rem)",
+              letterSpacing: "0.25em",
+              fontWeight: 700,
+              color: "#111",
+            }}
+          >
             Leitmotiv<br />Film
           </h1>
         </div>
       </div>
 
       {/* Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 border-t" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
-        <div className="p-12 border-r" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
+        <div className="p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="text-white/60 leading-relaxed text-base mb-6">
+            <p className="leading-relaxed text-base mb-6" style={{ color: "rgba(0,0,0,0.55)" }}>
               Leitmotiv Film is an Istanbul-based production company providing
               comprehensive production and fixer services for international
               productions, broadcasters, brands, and filmmakers working in Türkiye.
             </p>
-            <p className="text-white/60 leading-relaxed text-base mb-6">
+            <p className="leading-relaxed text-base mb-6" style={{ color: "rgba(0,0,0,0.55)" }}>
               With extensive experience supporting global media organizations and
               international crews, we specialize in delivering high-quality production
               services across commercials, documentaries, television programs, branded
               content, and feature films.
             </p>
-            <p className="text-white/60 leading-relaxed text-base">
+            <p className="leading-relaxed text-base" style={{ color: "rgba(0,0,0,0.55)" }}>
               Our team combines creative expertise with deep local knowledge, allowing
               us to manage every stage of production efficiently — from initial planning
               and location scouting to filming, logistics, and post-production coordination.
@@ -54,19 +62,19 @@ export default function About() {
                 { v: "200+", l: "Completed Projects" },
                 { v: "25+", l: "International Clients" },
                 { v: "30+", l: "Countries Served" },
-                { v: "10+", l: "Years Experience" },
+                { v: "15+", l: "Years Experience" },
               ].map(s => (
                 <div key={s.l}>
-                  <div className="text-4xl font-bold text-white mb-1" style={{ color: RED }}>{s.v}</div>
-                  <div className="text-xs uppercase tracking-widest text-white/30">{s.l}</div>
+                  <div className="text-4xl font-bold mb-1" style={{ color: RED }}>{s.v}</div>
+                  <div className="text-xs uppercase tracking-widest" style={{ color: "rgba(0,0,0,0.35)" }}>{s.l}</div>
                 </div>
               ))}
             </div>
 
             {/* Location */}
-            <div className="pt-8 border-t" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+            <div className="pt-8 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
               <p className="text-[10px] uppercase tracking-[0.3em] mb-3" style={{ color: BLUE }}>Location</p>
-              <p className="text-white/60 text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed" style={{ color: "rgba(0,0,0,0.55)" }}>
                 Caferağa Mah. Sakızgülü Sok.<br />
                 Sevin Apt. 29A Floor 1<br />
                 Kadıköy, Istanbul, Türkiye
@@ -78,8 +86,8 @@ export default function About() {
 
       {/* CTA strip */}
       <div className="border-t px-12 py-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
-        style={{ borderColor: "rgba(255,255,255,0.06)" }}>
-        <p className="text-white/50 text-sm max-w-md">
+        style={{ borderColor: "rgba(0,0,0,0.08)" }}>
+        <p className="text-sm max-w-md" style={{ color: "rgba(0,0,0,0.45)" }}>
           Ready to start your production in Türkiye? We'd love to hear about your project.
         </p>
         <Link
