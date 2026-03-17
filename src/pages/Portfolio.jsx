@@ -10,13 +10,13 @@ const projects = [
   { title: "Bebemoss Story", client: "Shopify", thumbnail: "https://i.ytimg.com/vi_webp/TpBNceZbHKE/maxresdefault.webp", url: "https://www.youtube.com/watch?v=TpBNceZbHKE" },
   { title: "Humans and AI: Meet Kürşat", client: "Microsoft", thumbnail: "https://i.ytimg.com/vi/wF2CI-AZ19E/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=wF2CI-AZ19E" },
   { title: "Turquie, le culte de la beauté?", client: "Arte / Tataki", thumbnail: "https://i.ytimg.com/vi_webp/Mpij5JhuLrI/maxresdefault.webp", url: "https://www.youtube.com/watch?v=Mpij5JhuLrI" },
+  { title: "Winter Garden / Kış Bahçesi", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640", url: "https://vimeo.com/409533871" },
   { title: "The Lord of the Mussels", client: "The Culture Trip", thumbnail: "https://i.ytimg.com/vi/YniHplbiGnc/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=YniHplbiGnc" },
+  { title: "The Return / Dönüş", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640", url: "https://vimeo.com/810633919" },
   { title: "Trial & Triumph: Seven Churches", client: "Appian Media", thumbnail: "https://i.ytimg.com/vi/apMj6heeibo/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=apMj6heeibo" },
   { title: "One Love", client: "Coca-Cola / Coke Studio", thumbnail: "https://i.ytimg.com/vi/Ul37EtOMh8U/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=Ul37EtOMh8U" },
   { title: "Rush – Reality Series", client: "Endemol Shine", thumbnail: "https://i.ytimg.com/vi/OMzsNGfR13Y/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=OMzsNGfR13Y" },
   { title: "Citroën Campaign – Istanbul", client: "Citroën", thumbnail: "https://i.vimeocdn.com/video/2128933241-1f7c34b56d9e108ffb8cf29eef9e87a894c6a17e5ae40d94683465aa89697a18-d?mw=640&q=85", url: "https://vimeo.com/1169974748/e10fd89403" },
-  { title: "Winter Garden / Kış Bahçesi", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1484818990-150c914adcc94693198f4dbf623fbcb7661ec71fac5cb5033dc527a9fff3b3ca-d_640", url: "https://vimeo.com/409533871" },
-  { title: "The Return / Dönüş – Mood Teaser", client: "Short Film", thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640", url: "https://vimeo.com/810633919" },
   { title: "Raiders of the Lost Past", client: "BBC", thumbnail: "https://i.ytimg.com/vi/CHkIiQ7ghyw/hqdefault.jpg", url: "https://www.youtube.com/watch?v=CHkIiQ7ghyw" },
   { title: "Rot Op Naar Je Eigen Land", client: "NPO3", thumbnail: "https://i.ytimg.com/vi/Uqr09TlvVR0/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=Uqr09TlvVR0" },
   { title: "Nuova Hyundai BAYON", client: "Hyundai", thumbnail: "https://i.vimeocdn.com/video/1117256398-c03bc6eb4e362a67880db7eda536ce0f9fd4aaa0eb678bbc85252b6f79402146-d_640", url: "https://vimeo.com/539660481" },
@@ -29,16 +29,21 @@ const projects = [
   { title: "It's Our Day MV", client: "Yoo Yong Min / Stone Music", thumbnail: "https://i.ytimg.com/vi/EUnCZJByYy8/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=EUnCZJByYy8" },
   { title: "Bir Araya Gel", client: "Eskiz", thumbnail: "https://i.ytimg.com/vi/9e1JkoZxGEc/maxresdefault.jpg", url: "https://www.youtube.com/watch?v=9e1JkoZxGEc" },
   { title: "Alo in the Wild: Turkey", client: "Alo Yoga", thumbnail: "https://d357mttm70bw7x.cloudfront.net/normal_19663957-3b41-435a-92fd-d69cd0127d0a.jpg", url: "https://wellnessclub.aloyoga.com/series/alo-in-the-wild-turkey" },
-  { title: "Post-Production", client: "Mustafa Deniz", thumbnail: "https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?w=1280&q=80", url: "https://www.mustafadeniz.net/post-production" },
+  { title: "Silent House", client: "Mustafa Deniz", thumbnail: "https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?w=1280&q=80", url: "https://www.mustafadeniz.net/post-production" },
 ];
 
 export default function Portfolio() {
   return (
     <div>
       {/* Page title bar */}
-      <div className="px-8 pt-16 pb-8 border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+      <div className="px-8 pt-16 pb-8 border-b" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
         <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>Selected Work</p>
-        <h1 className="text-4xl font-bold uppercase tracking-tight text-white">Projects</h1>
+        <h1
+          className="font-bold uppercase"
+          style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)", letterSpacing: "0.25em", color: "#111" }}
+        >
+          Projects
+        </h1>
       </div>
 
       {/* Grid */}
@@ -57,7 +62,7 @@ export default function Portfolio() {
             style={{ aspectRatio: "16/9" }}
           >
             <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100" style={{ backgroundColor: "rgba(13,13,13,0.55)" }} />
+            <div className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100" style={{ backgroundColor: "rgba(0,0,0,0.35)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-5" style={{ background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)" }}>
               <p className="text-[10px] uppercase tracking-[0.2em] mb-1" style={{ color: RED }}>{project.client}</p>
               <h3 className="text-sm font-bold uppercase tracking-wide text-white leading-snug">{project.title}</h3>

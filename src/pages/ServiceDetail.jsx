@@ -7,10 +7,8 @@ const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
 const serviceData = {
-  // --- PRODUCTION ---
   "commercial-films": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Commercial Films",
     intro: "High-impact commercials that make your brand unforgettable.",
     body: `Whether you're launching a new product, building brand awareness, or reaching a global audience, our commercial film production services deliver visually stunning, strategically crafted content that resonates.
@@ -23,8 +21,7 @@ Whether you need a single 30-second spot or a full multi-platform campaign, we b
     highlights: ["Full-service production management", "Global broadcast standards", "Diverse Turkish locations", "International brand experience"],
   },
   "feature-films-short-films": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Feature Films & Short Films",
     intro: "Bringing cinematic visions to life in one of the world's most compelling filming destinations.",
     body: `Turkey's rich history, breathtaking geography, and vibrant culture make it one of cinema's most coveted destinations. From Ottoman palaces and ancient amphitheatres to modern Istanbul streets and remote Anatolian landscapes, the possibilities are limitless.
@@ -35,8 +32,7 @@ We have supported documentary features, drama productions, and artistic short fi
     highlights: ["Location recce & permitting", "Drama & documentary experience", "Local & international crew", "Full logistical support"],
   },
   "tv-programs": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "TV Programs",
     intro: "End-to-end production support for television content shot in Turkey.",
     body: `From prime-time travel shows and news magazine programs to reality series and lifestyle content, our team has the experience and infrastructure to support TV productions of any scale shooting in Turkey.
@@ -47,8 +43,7 @@ Past television clients include Arte, BBC, NPO3, Canal+, Deutsche Welle, and Cha
     highlights: ["Broadcaster-grade standards", "Fixing & journalism support", "Reality & entertainment formats", "Nationwide shoot coverage"],
   },
   "documentaries": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Documentaries",
     intro: "Compelling documentary production rooted in authentic storytelling.",
     body: `Turkey is a country of extraordinary stories — at the crossroads of Europe and Asia, ancient and modern, secular and spiritual. It is a place that documentary filmmakers return to again and again. Our team is uniquely positioned to help you find those stories and bring them to the screen.
@@ -59,8 +54,7 @@ We have worked on documentaries for BBC, Arte, Vice, Financial Times, CNN, and W
     highlights: ["Research & contributor access", "Sensitive topic experience", "Nationwide documentary coverage", "Bilingual production team"],
   },
   "reality-shows": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Reality Shows",
     intro: "Fast-paced, high-energy reality production in Turkey's most dynamic settings.",
     body: `Reality television demands speed, flexibility, and a production team that can handle the unexpected. Our crew thrives in this environment, delivering quality content even under the most demanding shooting conditions.
@@ -71,8 +65,7 @@ We have supported major international reality productions including Endemol Shin
     highlights: ["Multi-camera production", "Large-scale logistics", "Fast-turnaround capability", "Diverse location formats"],
   },
   "corporate-films": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Corporate Films",
     intro: "Professional corporate video that communicates your brand story with clarity and impact.",
     body: `A well-crafted corporate film can transform how clients, investors, and employees perceive your organisation. Whether you need an internal communications video, an investor presentation film, a brand story documentary, or a product showcase, we produce corporate content that is polished, purposeful, and persuasive.
@@ -83,8 +76,7 @@ We handle every stage of corporate production in-house, from scripting and story
     highlights: ["Brand & investor films", "Internal communications", "Product showcases", "Multi-platform content"],
   },
   "music-videos": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Music Videos",
     intro: "Visually arresting music videos produced with cinematic precision.",
     body: `Music videos demand creative ambition, technical skill, and the ability to execute a distinctive visual concept within tight budgets and schedules. Our team delivers on all fronts, producing music videos that stand out in an increasingly crowded landscape.
@@ -95,8 +87,7 @@ We have produced music videos for international and Turkish artists, working wit
     highlights: ["Location & permit expertise", "Narrative & performance formats", "International artist experience", "Creative crew collaboration"],
   },
   "social-media-video-production": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Social Media Video Production",
     intro: "Platform-native video content engineered for engagement.",
     body: `Social media has transformed the way brands communicate, and video sits at the heart of every successful digital strategy. Our social media video production service is designed for brands, agencies, and content creators who need high-quality, platform-optimised video content produced efficiently and consistently.
@@ -107,8 +98,7 @@ Based in Istanbul, we can leverage Turkey's rich visual environment to create co
     highlights: ["Multi-platform optimisation", "Short & long-form content", "Fast turnaround production", "Brand & agency partnerships"],
   },
   "photography": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Photography",
     intro: "Compelling still photography from Turkey's most extraordinary locations.",
     body: `Alongside our video production work, we offer professional photography services for commercial, editorial, and documentary projects in Turkey. Whether you need campaign imagery for a fashion brand, editorial photographs for a magazine feature, or documentary stills to complement a film project, our photography team delivers images of the highest quality.
@@ -119,8 +109,7 @@ Our photography services include full production support: location scouting, per
     highlights: ["Commercial & editorial photography", "Fashion & lifestyle shoots", "Documentary still photography", "Full production support"],
   },
   "drone-filming": {
-    category: "Production",
-    categoryColor: RED,
+    category: "Production", categoryColor: RED,
     title: "Drone Filming",
     intro: "Breathtaking aerial cinematography over Turkey's most spectacular landscapes.",
     body: `Drone footage has the power to transform a production — providing scale, context, and visual drama that is simply impossible to achieve from the ground. Our licensed drone operators and state-of-the-art aerial equipment deliver cinematic aerial content that elevates every project.
@@ -130,134 +119,117 @@ Turkey is one of the world's most rewarding destinations for aerial filming, off
 We operate professional-grade drone systems capable of capturing ultra-high-definition footage for broadcast, commercial, and cinematic applications, and our drone operators work in close collaboration with directors of photography to integrate aerial sequences seamlessly into the wider production.`,
     highlights: ["Licensed & fully permitted operations", "Ultra-HD aerial footage", "Broadcast & commercial grade", "Nationwide aerial coverage"],
   },
-
-  // --- PRODUCTION SUPPORT ---
   "location-scouting-permits": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Location Scouting & Permits",
-    intro: "We find the perfect filming locations and handle all necessary permits and paperwork so you can focus on the creative process.",
+    intro: "We find the perfect filming locations and handle all necessary permits so you can focus on the creative process.",
     body: `Finding the right location can define the look and feel of an entire production. Our location scouting team has an extensive knowledge of Turkey's most photogenic settings — from the ancient streets of Istanbul's historic peninsula and the surreal landscapes of Cappadocia to the dramatic coastlines of the Aegean and the remote wilderness of Eastern Anatolia.
 
 We work closely with directors and cinematographers to identify locations that serve the creative vision, conducting thorough recces and providing comprehensive location reports with photography, logistical assessments, and permit information.
 
-Beyond scouting, we handle the entire permitting process on your behalf — liaising with municipal authorities, heritage bodies, national parks, and private landowners to secure the permissions your production requires. Our established relationships with Turkish authorities mean we can navigate the permitting landscape efficiently, saving you time and avoiding costly delays.`,
+Beyond scouting, we handle the entire permitting process on your behalf — liaising with municipal authorities, heritage bodies, national parks, and private landowners to secure the permissions your production requires.`,
     highlights: ["Nationwide location database", "Comprehensive location reports", "Full permit management", "Authority liaison & negotiation"],
   },
   "casting-crew": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Casting & Crew",
-    intro: "From local talent to experienced film crews, we connect you with the right professionals to bring your vision to life.",
+    intro: "From local talent to experienced film crews, we connect you with the right professionals.",
     body: `A production is only as strong as the people behind it. Our extensive network of Turkish and internationally experienced crew members ensures that we can assemble the right team for any project, in any genre, at any scale.
 
 Our crew roster includes directors of photography, camera operators, sound recordists, gaffers, grips, art directors, stylists, make-up artists, and production assistants, all vetted for their professionalism and experience working with international productions.
 
-For casting, we work with experienced local casting directors and maintain strong relationships with Turkey's acting community, enabling us to source the right on-screen talent quickly and efficiently. Whether you need principal cast members, supporting artists, or background extras, we manage the entire casting process to your brief.`,
+For casting, we work with experienced local casting directors and maintain strong relationships with Turkey's acting community, enabling us to source the right on-screen talent quickly and efficiently.`,
     highlights: ["Vetted professional crew network", "Local & international talent", "All genres & scales", "Full casting management"],
   },
   "transportation-accommodation": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Transportation & Accommodation",
-    intro: "We organise transportation and comfortable accommodation for your team to ensure a smooth and efficient production.",
+    intro: "We organise transportation and comfortable accommodation to ensure a smooth and efficient production.",
     body: `Logistics can make or break a production. Our transportation and accommodation management service ensures that your team travels safely, efficiently, and comfortably throughout their time in Turkey.
 
 We coordinate all ground transportation — from airport transfers and unit base vehicles to equipment trucks and multi-vehicle convoys for complex location shoots across the country. Our driver network is experienced in production work and understands the demands of early call times, long shooting days, and rapid location changes.
 
-For accommodation, we source and negotiate the best available options for your team, whether that's a centrally located Istanbul hotel for a city-based shoot or a collection of boutique properties near a remote location. We consider proximity to shoot locations, budget parameters, and the specific needs of your team to ensure everyone is rested and ready.`,
+For accommodation, we source and negotiate the best available options for your team, whether that's a centrally located Istanbul hotel for a city-based shoot or a collection of boutique properties near a remote location.`,
     highlights: ["Airport & unit base transfers", "Multi-vehicle convoy coordination", "Budget & boutique accommodation", "Nationwide coverage"],
   },
   "production-office-setup": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Production Office Setup",
-    intro: "Need a base of operations? We provide fully equipped production offices with everything your team needs.",
+    intro: "We provide fully equipped production offices with everything your team needs.",
     body: `An efficient production office is the nerve centre of any major project. We source, set up, and manage fully equipped production office facilities tailored to the scale and duration of your production.
 
 Our production office setups include high-speed internet connectivity, printing and scanning facilities, production desks and editing workstations, secure storage, and catering and kitchen facilities. We can establish offices in Istanbul or in regional locations across Turkey, depending on your shooting schedule.
 
-For productions requiring a longer-term presence in Turkey, we can also assist with the establishment of a local production entity, ensuring full compliance with Turkish business and broadcasting regulations. Our goal is to provide your team with a professional, comfortable, and fully functional working environment from day one.`,
+For productions requiring a longer-term presence in Turkey, we can also assist with the establishment of a local production entity, ensuring full compliance with Turkish business and broadcasting regulations.`,
     highlights: ["High-speed connectivity", "Equipped workstations", "Istanbul & regional locations", "Local entity setup assistance"],
   },
   "post-production-coordination": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Post-Production Coordination",
     intro: "From editing to visual effects, we help coordinate every stage of the post-production process.",
     body: `A great shoot is only the beginning. Our post-production coordination service ensures that the transition from set to final delivery is as smooth and efficient as possible, whether your post work is being completed in Turkey or abroad.
 
 We manage the organisation and delivery of camera and audio dailies, coordinate with your post-production supervisor and editor, liaise with local post-production facilities where required, and assist with the management of VFX, colour grading, and sound design briefs.
 
-For productions completing post in Turkey, we have established relationships with Istanbul's leading post-production houses, offering services including offline and online editing, colour grading, visual effects, and audio post. We act as your local point of contact throughout post, ensuring that nothing falls through the cracks and your delivery deadlines are met.`,
+For productions completing post in Turkey, we have established relationships with Istanbul's leading post-production houses, offering services including offline and online editing, colour grading, visual effects, and audio post.`,
     highlights: ["Dailies management & delivery", "Post facility liaison", "VFX & colour coordination", "Delivery deadline management"],
   },
   "local-vendors-catering": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Local Vendors & Catering",
-    intro: "Whether you need props, equipment, or catering services, we connect you with the best local suppliers.",
+    intro: "Whether you need props, equipment, or catering, we connect you with the best local suppliers.",
     body: `The quality of your on-set vendors can have a significant impact on both the production experience and the final product. We maintain a carefully curated network of trusted local suppliers across Turkey, covering everything your production might need.
 
-For props and set dressing, we work with experienced art directors and prop houses to source authentic Turkish and international items that serve your production design. For specialist equipment — generators, lighting rigs, grip equipment, camera accessories — we have established relationships with Turkey's leading rental houses.
+For props and set dressing, we work with experienced art directors and prop houses to source authentic Turkish and international items that serve your production design. For specialist equipment, we have established relationships with Turkey's leading rental houses.
 
-Our catering partnerships ensure your crew is fed well throughout every shooting day, with options ranging from local Turkish cuisine to international menus, adapted to dietary requirements and serving scales from intimate crew sizes to large-scale multi-unit productions. We believe a well-fed crew is a happy, productive crew.`,
+Our catering partnerships ensure your crew is fed well throughout every shooting day, with options ranging from local Turkish cuisine to international menus, adapted to dietary requirements and serving scales from intimate crew sizes to large-scale multi-unit productions.`,
     highlights: ["Props & art department sourcing", "Equipment rental coordination", "Professional crew catering", "Dietary requirement management"],
   },
   "health-safety": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Health & Safety",
     intro: "We ensure a safe working environment with on-set medics and comprehensive safety protocols.",
     body: `The safety of your cast and crew is our absolute priority. We implement comprehensive health and safety protocols on every production we support, adapted to the specific risks and requirements of each project.
 
 Our health and safety services include the provision of qualified on-set medics and first aiders, risk assessments for all locations and activities, coordination of safety equipment and procedures for stunts and aerial work, and full compliance with Turkish workplace safety legislation.
 
-For international productions, we translate and implement the health and safety standards of the commissioning broadcaster or studio, ensuring that your production meets the requirements of your insurance provider and your organisation's duty of care obligations. We believe that robust safety practices are not a constraint on creativity — they are what allow productions to work ambitiously with confidence.`,
+For international productions, we translate and implement the health and safety standards of the commissioning broadcaster or studio, ensuring that your production meets the requirements of your insurance provider and your organisation's duty of care obligations.`,
     highlights: ["On-set medics & first aiders", "Full risk assessments", "Stunt & aerial safety protocols", "International safety standard compliance"],
   },
   "subsidies-grants": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Subsidies & Grants",
-    intro: "We assist productions in accessing local incentives and financial opportunities to maximise your production budget.",
+    intro: "We assist productions in accessing local incentives to maximise your production budget.",
     body: `Turkey offers a range of financial incentives for international productions, and navigating these opportunities requires specialist knowledge and established relationships with the relevant authorities. Our team has the expertise to help you identify and access the subsidies and grants your production may be eligible for.
 
 We assist with applications to the Turkish Ministry of Culture and Tourism's international co-production and incentive schemes, as well as regional filming incentives offered by local municipalities. We advise on the structural and budgetary requirements for eligibility and manage the application process on your behalf.
 
-Maximising your production's access to local incentives can make a significant difference to your overall budget, and our guidance ensures that you don't leave money on the table. We work transparently and efficiently to give your production the best possible financial foundation.`,
+Maximising your production's access to local incentives can make a significant difference to your overall budget, and our guidance ensures that you don't leave money on the table.`,
     highlights: ["Ministry incentive applications", "Regional filming subsidies", "Co-production scheme guidance", "Budget maximisation strategy"],
   },
   "equipment-technical-support": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Top-Tier Equipment & Technical Support",
     intro: "Access the latest professional equipment and experienced technical teams for a seamless production.",
     body: `Access to the right equipment is fundamental to achieving your creative vision. We source and supply professional-grade cameras, lenses, lighting, grip, and sound equipment from Turkey's leading rental houses, with our technical team ensuring everything is in perfect working order before it reaches your set.
 
-We work with all major camera systems including ARRI, RED, Sony Venice, and Blackmagic, and can supply supporting equipment packages tailored to the specific requirements of your project and director of photography. Our relationships with Istanbul's equipment rental community allow us to secure the equipment you need, even at short notice.
+We work with all major camera systems including ARRI, RED, Sony Venice, and Blackmagic, and can supply supporting equipment packages tailored to the specific requirements of your project and director of photography.
 
-In addition to equipment sourcing, we provide on-set technical support through experienced data managers, DIT operators, and technical coordinators who ensure your footage is properly captured, backed up, and prepared for post-production. We are committed to zero-compromise technical standards on every production.`,
+In addition to equipment sourcing, we provide on-set technical support through experienced data managers, DIT operators, and technical coordinators who ensure your footage is properly captured, backed up, and prepared for post-production.`,
     highlights: ["ARRI, RED, Sony Venice systems", "Full lighting & grip packages", "DIT & data management", "Short-notice equipment sourcing"],
   },
   "customs-shipping": {
-    category: "Production Support",
-    categoryColor: BLUE,
+    category: "Production Support", categoryColor: BLUE,
     title: "Customs & Shipping",
     intro: "We handle equipment imports, exports, and customs clearance to ensure your production runs without delays.",
     body: `Importing professional production equipment into Turkey and exporting it again after your shoot involves a complex process of documentation, customs declarations, and liaison with Turkish customs authorities. Without expert management, this process can cause significant delays and unexpected costs.
 
 Our customs and shipping team handles the entire process on your behalf — from preparing the necessary documentation and ATA Carnet management to coordinating with freight forwarders, customs brokers, and airport cargo handlers. We ensure your equipment arrives on time, fully cleared, and ready for use.
 
-For productions shipping equipment into Turkey from multiple countries, or requiring equipment to be moved between locations across the country, we manage all logistics with precision and transparency. Our goal is to ensure that customs and shipping is one less thing your production team needs to worry about.`,
+For productions shipping equipment into Turkey from multiple countries, or requiring equipment to be moved between locations across the country, we manage all logistics with precision and transparency.`,
     highlights: ["ATA Carnet management", "Customs documentation & clearance", "Airport cargo coordination", "Multi-country equipment logistics"],
   },
 };
-
-const slugify = (title) =>
-  title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
-export { slugify };
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -267,8 +239,8 @@ export default function ServiceDetail() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <p className="text-white/40 mb-4">Service not found.</p>
-          <Link to="/Services" className="text-white underline">Back to Services</Link>
+          <p className="mb-4" style={{ color: "rgba(0,0,0,0.4)" }}>Service not found.</p>
+          <Link to="/Services" style={{ color: "#111" }} className="underline">Back to Services</Link>
         </div>
       </div>
     );
@@ -280,34 +252,39 @@ export default function ServiceDetail() {
       <div className="px-8 pt-8">
         <Link
           to="/Services"
-          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/40 hover:text-white transition-colors"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] transition-opacity hover:opacity-50"
+          style={{ color: "rgba(0,0,0,0.4)" }}
         >
           <ArrowLeft className="w-3 h-3" /> Services
         </Link>
       </div>
 
       {/* Header */}
-      <div className="px-8 pt-8 pb-12 border-b" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+      <div className="px-8 pt-8 pb-12 border-b" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
         <p className="text-[10px] uppercase tracking-[0.3em] mb-3" style={{ color: service.categoryColor }}>
           {service.category}
         </p>
-        <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-tight text-white mb-6 max-w-3xl">
+        <h1
+          className="font-bold uppercase mb-6 max-w-3xl"
+          style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)", letterSpacing: "0.25em", color: "#111" }}
+        >
           {service.title}
         </h1>
-        <p className="text-lg text-white/60 max-w-2xl leading-relaxed">{service.intro}</p>
+        <p className="text-lg max-w-2xl leading-relaxed" style={{ color: "rgba(0,0,0,0.5)" }}>{service.intro}</p>
       </div>
 
       {/* Body */}
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* Main text */}
-        <div className="md:col-span-2 p-12 border-r" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
+        <div className="md:col-span-2 p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
           {service.body.split("\n\n").map((para, i) => (
             <motion.p
               key={i}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="text-white/60 leading-relaxed mb-6 text-base"
+              className="leading-relaxed mb-6 text-base"
+              style={{ color: "rgba(0,0,0,0.55)" }}
             >
               {para}
             </motion.p>
@@ -329,13 +306,13 @@ export default function ServiceDetail() {
                 className="flex items-start gap-3"
               >
                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: service.categoryColor }} />
-                <span className="text-sm text-white/70">{h}</span>
+                <span className="text-sm" style={{ color: "rgba(0,0,0,0.6)" }}>{h}</span>
               </motion.div>
             ))}
           </div>
 
-          <div className="mt-16 pt-8 border-t" style={{ borderColor: "rgba(255,255,255,0.06)" }}>
-            <p className="text-[10px] uppercase tracking-[0.3em] mb-4 text-white/30">Interested?</p>
+          <div className="mt-16 pt-8 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
+            <p className="text-[10px] uppercase tracking-[0.3em] mb-4" style={{ color: "rgba(0,0,0,0.3)" }}>Interested?</p>
             <Link
               to="/Contact"
               className="inline-block text-sm font-bold uppercase tracking-[0.15em] px-6 py-3 transition-all"

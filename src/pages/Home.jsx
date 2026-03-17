@@ -6,7 +6,6 @@ import ClientsMarquee from "@/components/home/ClientsMarquee";
 
 const RED = "#B85040";
 
-// All projects shown as full-bleed grid on homepage
 const projects = [
   {
     title: "The Mediterranean Seeker – Turkey",
@@ -45,10 +44,10 @@ const projects = [
     url: "https://www.youtube.com/watch?v=Mpij5JhuLrI",
   },
   {
-    title: "The Lord of the Mussels",
-    client: "The Culture Trip",
-    thumbnail: "https://i.ytimg.com/vi/YniHplbiGnc/maxresdefault.jpg",
-    url: "https://www.youtube.com/watch?v=YniHplbiGnc",
+    title: "The Return / Dönüş",
+    client: "Short Film",
+    thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640",
+    url: "https://vimeo.com/810633919",
   },
   {
     title: "Bebemoss Story",
@@ -69,10 +68,10 @@ const projects = [
     url: "https://vimeo.com/409533871",
   },
   {
-    title: "The Return / Dönüş – Mood Teaser",
-    client: "Short Film",
-    thumbnail: "https://i.vimeocdn.com/video/1638286094-95a29ed7a97cc8b3ffc60ecd1be707bbf70fd9efd33d2bb17b6436af17b84ab6-d_640",
-    url: "https://vimeo.com/810633919",
+    title: "The Lord of the Mussels",
+    client: "The Culture Trip",
+    thumbnail: "https://i.ytimg.com/vi/YniHplbiGnc/maxresdefault.jpg",
+    url: "https://www.youtube.com/watch?v=YniHplbiGnc",
   },
   {
     title: "Raiders of the Lost Past",
@@ -153,7 +152,7 @@ const projects = [
     url: "https://wellnessclub.aloyoga.com/series/alo-in-the-wild-turkey",
   },
   {
-    title: "Post-Production",
+    title: "Silent House",
     client: "Mustafa Deniz",
     thumbnail: "https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?w=1280&q=80",
     url: "https://www.mustafadeniz.net/post-production",
@@ -164,7 +163,7 @@ export default function Home() {
   return (
     <div>
       {/* 2-column project grid with gaps */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[3px]" style={{ backgroundColor: "#1a1a1a" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[3px]" style={{ backgroundColor: "#ccc" }}>
         {projects.map((project, i) => (
           <ProjectTile key={i} project={project} index={i} />
         ))}
@@ -174,9 +173,9 @@ export default function Home() {
 
       {/* Footer strip */}
       <div className="border-t px-8 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs"
-        style={{ borderColor: "rgba(255,255,255,0.06)", color: "rgba(255,255,255,0.3)" }}>
+        style={{ borderColor: "rgba(0,0,0,0.08)", color: "rgba(0,0,0,0.35)" }}>
         <span>© {new Date().getFullYear()} Leitmotiv Film. Kadıköy, Istanbul.</span>
-        <Link to={createPageUrl("Contact")} className="hover:text-white transition-colors">
+        <Link to={createPageUrl("Contact")} className="hover:text-black transition-colors">
           info@leitmotivfilm.net
         </Link>
       </div>
@@ -204,7 +203,7 @@ function ProjectTile({ project, index }) {
       {/* Hover overlay */}
       <div
         className="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-        style={{ backgroundColor: "rgba(13,13,13,0.55)" }}
+        style={{ backgroundColor: "rgba(0,0,0,0.35)" }}
       />
       {/* Title — always visible at bottom */}
       <div className="absolute bottom-0 left-0 right-0 p-5"
