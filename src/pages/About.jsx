@@ -11,11 +11,10 @@ const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27b
 export default function About() {
   return (
     <div style={{ minHeight: "100vh" }}>
-      {/* Full-bleed image */}
-      <div className="relative w-full" style={{ height: "60vh" }}>
-        <img src={ABOUT_IMG} alt="Leitmotiv Film" className="w-full h-full object-cover" />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 40%, #f5f2ee 100%)" }} />
-        <div className="absolute bottom-10 left-8">
+      {/* Hero: text left, illustration right */}
+      <div className="flex flex-col md:flex-row" style={{ minHeight: "55vh", borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
+        {/* Left: title text */}
+        <div className="flex flex-col justify-end p-8 md:p-12 md:w-1/2">
           <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>About</p>
           <h1
             className="uppercase leading-none"
@@ -28,6 +27,27 @@ export default function About() {
           >
             <span style={{ color: RED }}>L</span>EITMOTIV FILM
           </h1>
+        </div>
+
+        {/* Right: illustration cropped, triangular composition */}
+        <div className="relative md:w-1/2 overflow-hidden" style={{ minHeight: "340px" }}>
+          {/* We crop the image to show the three illustrations in a tight triangle arrangement */}
+          <img
+            src={ABOUT_IMG}
+            alt="Istanbul illustrations"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%) scale(1.1)",
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center center",
+            }}
+          />
+          {/* Subtle fade on left edge to blend with page */}
+          <div className="absolute inset-y-0 left-0 w-16" style={{ background: "linear-gradient(to right, #f5f2ee, transparent)" }} />
         </div>
       </div>
 
