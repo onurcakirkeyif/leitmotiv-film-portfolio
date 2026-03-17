@@ -6,7 +6,7 @@ import { createPageUrl } from "@/utils";
 const RED = "#B85040";
 const BLUE = "#5B7FA6";
 
-const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27bf1/1c65844aa_Gemini_Generated_Image_ebjrp8ebjrp8ebjr.png";
+const ABOUT_IMG = "https://media.base44.com/images/public/69b50fc6b8611f01f5f27bf1/6970437fb_Gemini_Generated_Image_ebjrp8ebjrp8ebjr1.jpg";
 
 export default function About() {
   return (
@@ -39,11 +39,11 @@ export default function About() {
               position: "absolute",
               top: "50%",
               left: "50%",
-              transform: "translate(-50%, -45%) scale(1.35)",
+              transform: "translate(-50%, -50%)",
               width: "100%",
               height: "100%",
-              objectFit: "cover",
-              objectPosition: "55% 55%",
+              objectFit: "contain",
+              objectPosition: "center center",
             }}
           />
           {/* Subtle fade on left edge to blend with page */}
