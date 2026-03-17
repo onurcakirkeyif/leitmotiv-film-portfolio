@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div style={{ minHeight: "100vh" }}>
       {/* Hero: text left, illustration right */}
-      <div className="flex flex-col md:flex-row" style={{ minHeight: "55vh", borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
+      <div className="flex flex-col md:flex-row" style={{ minHeight: "50vh", borderBottom: "1px solid rgba(0,0,0,0.08)" }}>
         {/* Left: title text */}
         <div className="flex flex-col justify-end p-8 md:p-12 md:w-1/2">
           <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>About</p>
@@ -30,7 +30,7 @@ export default function About() {
         </div>
 
         {/* Right: illustration cropped, triangular composition */}
-        <div className="relative md:w-1/2 overflow-hidden" style={{ minHeight: "340px" }}>
+        <div className="relative md:w-1/2 overflow-hidden" style={{ minHeight: "420px", backgroundColor: "#f5f2ee" }}>
           {/* We crop the image to show the three illustrations in a tight triangle arrangement */}
           <img
             src={ABOUT_IMG}
