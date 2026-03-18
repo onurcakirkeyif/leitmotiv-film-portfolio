@@ -114,9 +114,9 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Contact info bottom */}
             <div className="absolute bottom-10 left-24 space-y-1">
-              <div className="text-[10px] uppercase tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.35)" }}>info@leitmotivfilm.net</div>
-              <div className="text-[10px] uppercase tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.35)" }}>+90 555 354 75 85</div>
-              <div className="text-[10px] uppercase tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.35)" }}>Kadıköy, Istanbul, Türkiye</div>
+              <div className="text-[10px] font-bold tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.35)" }}>info@leitmotivfilm.net</div>
+              <div className="text-[10px] font-bold tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.35)" }}>+90 555 354 75 85</div>
+              <div className="text-[10px] font-bold tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.35)" }}>Kadıköy, Istanbul, Türkiye</div>
             </div>
           </motion.div>
         )}
