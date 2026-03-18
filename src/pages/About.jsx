@@ -35,18 +35,18 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
         <div className="p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="leading-relaxed text-[11px] font-bold uppercase tracking-[0.25em] mb-6 text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
+            <p className="leading-relaxed text-[11px] font-bold tracking-[0.25em] mb-6 text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
               Leitmotiv Film is an Istanbul-based production company providing
               comprehensive production and fixer services for international
               productions, broadcasters, brands, and filmmakers working in Türkiye.
             </p>
-            <p className="leading-relaxed text-[11px] font-bold uppercase tracking-[0.25em] mb-6 text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
+            <p className="leading-relaxed text-[11px] font-bold tracking-[0.25em] mb-6 text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
               With extensive experience supporting global media organizations and
               international crews, we specialize in delivering high-quality production
               services across commercials, documentaries, television programs, branded
               content, and feature films.
             </p>
-            <p className="leading-relaxed text-[11px] font-bold uppercase tracking-[0.25em] text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
+            <p className="leading-relaxed text-[11px] font-bold tracking-[0.25em] text-justify" style={{ color: "rgba(0,0,0,0.55)" }}>
               Our team combines creative expertise with deep local knowledge, allowing
               us to manage every stage of production efficiently — from initial planning
               and location scouting to filming, logistics, and post-production coordination.
@@ -74,7 +74,7 @@ export default function About() {
             {/* Location */}
             <div className="pt-8 border-t" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
               <p className="text-[10px] uppercase tracking-[0.3em] mb-3" style={{ color: BLUE }}>Location</p>
-              <p className="text-[11px] font-bold uppercase tracking-[0.25em] leading-relaxed" style={{ color: "rgba(0,0,0,0.55)" }}>
+              <p className="text-[11px] font-bold tracking-[0.25em] leading-relaxed" style={{ color: "rgba(0,0,0,0.55)" }}>
                 Caferağa Mah. Sakızgülü Sok.<br />
                 Sevin Apt. 29A Floor -1<br />
                 Kadıköy, Istanbul, Türkiye
@@ -87,7 +87,7 @@ export default function About() {
       {/* CTA strip */}
       <div className="border-t px-12 py-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         style={{ borderColor: "rgba(0,0,0,0.08)" }}>
-        <p className="text-[11px] font-bold uppercase tracking-[0.25em] max-w-md" style={{ color: "rgba(0,0,0,0.45)" }}>
+        <p className="text-[11px] font-bold tracking-[0.25em] max-w-md" style={{ color: "rgba(0,0,0,0.45)" }}>
           Ready to start your production in Türkiye? We'd love to hear about your project.
         </p>
         <Link
