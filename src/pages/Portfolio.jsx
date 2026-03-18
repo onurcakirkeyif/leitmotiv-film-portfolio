@@ -40,7 +40,7 @@ export default function Portfolio() {
         <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>Selected Work</p>
         <h1
           className="font-bold uppercase"
-          style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)", letterSpacing: "0.25em", color: "#111" }}
+          style={{ fontSize: "clamp(0.8rem, 2vw, 1.1rem)", letterSpacing: "0.25em", color: "#111" }}
         >
           Projects
         </h1>
