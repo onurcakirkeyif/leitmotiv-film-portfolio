@@ -13,7 +13,7 @@ export default function Contact() {
         <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: RED }}>Say Hello</p>
         <h1
           className="font-bold uppercase"
-          style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)", letterSpacing: "0.25em", color: "#111" }}
+          style={{ fontSize: "clamp(0.8rem, 2vw, 1.1rem)", letterSpacing: "0.25em", color: "#111" }}
         >
           Contact
         </h1>

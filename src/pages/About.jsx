@@ -18,7 +18,7 @@ export default function About() {
           <h1
             className="uppercase leading-none"
             style={{
-              fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+              fontSize: "clamp(0.8rem, 2vw, 1.1rem)",
               letterSpacing: "0.25em",
               fontWeight: 700,
               color: "#111",
