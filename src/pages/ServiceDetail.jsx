@@ -266,7 +266,7 @@ export default function ServiceDetail() {
         </p>
         <h1
           className="font-bold uppercase mb-6 max-w-3xl"
-          style={{ fontSize: "clamp(1rem, 3vw, 1.5rem)", letterSpacing: "0.25em", color: "#111" }}
+          style={{ fontSize: "clamp(0.8rem, 2vw, 1.1rem)", letterSpacing: "0.25em", color: "#111" }}
         >
           {service.title}
         </h1>
