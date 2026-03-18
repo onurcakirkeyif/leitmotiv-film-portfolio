@@ -270,7 +270,7 @@ export default function ServiceDetail() {
         >
           {service.title}
         </h1>
-        <p className="text-lg max-w-2xl leading-relaxed text-justify" style={{ color: "rgba(0,0,0,0.5)" }}>{service.intro}</p>
+        <p className="text-[13px] max-w-2xl leading-relaxed text-justify" style={{ color: "rgba(0,0,0,0.5)" }}>{service.intro}</p>
       </div>
 
       {/* Body */}
@@ -283,7 +283,7 @@ export default function ServiceDetail() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="leading-relaxed mb-6 text-base text-justify"
+              className="leading-relaxed mb-6 text-[13px] text-justify"
               style={{ color: "rgba(0,0,0,0.55)" }}
             >
               {para}
