@@ -270,7 +270,7 @@ export default function ServiceDetail() {
         >
           {service.title}
         </h1>
-        <p className="text-lg max-w-2xl leading-relaxed text-justify" style={{ color: "rgba(0,0,0,0.5)" }}>{service.intro}</p>
+        <p className="text-[11px] font-bold uppercase tracking-[0.25em] max-w-2xl leading-relaxed text-justify" style={{ color: "rgba(0,0,0,0.5)" }}>{service.intro}</p>
       </div>
 
       {/* Body */}
@@ -283,7 +283,7 @@ export default function ServiceDetail() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="leading-relaxed mb-6 text-base text-justify"
+              className="leading-relaxed mb-6 text-[11px] font-bold uppercase tracking-[0.25em] text-justify"
               style={{ color: "rgba(0,0,0,0.55)" }}
             >
               {para}
@@ -306,7 +306,7 @@ export default function ServiceDetail() {
                 className="flex items-start gap-3"
               >
                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: service.categoryColor }} />
-                <span className="text-sm" style={{ color: "rgba(0,0,0,0.6)" }}>{h}</span>
+                <span className="text-[11px] font-bold uppercase tracking-[0.25em]" style={{ color: "rgba(0,0,0,0.6)" }}>{h}</span>
               </motion.div>
             ))}
           </div>

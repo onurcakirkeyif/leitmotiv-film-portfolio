@@ -102,7 +102,7 @@ export default function Services() {
         <p className="text-[10px] uppercase tracking-[0.3em] mb-8" style={{ color: "rgba(0,0,0,0.3)" }}>International Clients</p>
         <div className="flex flex-wrap gap-x-8 gap-y-3">
           {["Associated Press","BBC","CNN","Arte","Deutsche Welle","Financial Times","Vice","Canal+","Wall Street Journal","Microsoft","Coca-Cola","Shopify","Hyundai","Mango","Citroën","Decathlon","The Culture Trip"].map(c => (
-            <span key={c} className="text-sm cursor-default transition-opacity hover:opacity-100" style={{ color: "rgba(0,0,0,0.4)" }}>{c}</span>
+            <span key={c} className="text-[11px] font-bold uppercase tracking-[0.25em] cursor-default transition-opacity hover:opacity-100" style={{ color: "rgba(0,0,0,0.4)" }}>{c}</span>
           ))}
         </div>
       </div>
