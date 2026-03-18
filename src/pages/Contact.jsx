@@ -31,20 +31,20 @@ export default function Contact() {
             <div className="space-y-8">
               <div>
                 <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: "rgba(0,0,0,0.3)" }}>Email</p>
-                <a href="mailto:info@leitmotivfilm.net" className="text-sm font-bold uppercase tracking-[0.25em] transition-opacity hover:opacity-50" style={{ color: "#111" }}>
+                <a href="mailto:info@leitmotivfilm.net" className="text-sm font-bold tracking-[0.1em] transition-opacity hover:opacity-50" style={{ color: "#111" }}>
                   info@leitmotivfilm.net
                 </a>
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: "rgba(0,0,0,0.3)" }}>Phone / WhatsApp</p>
-                <a href="tel:+905553547585" className="text-sm font-bold uppercase tracking-[0.25em] transition-opacity hover:opacity-50" style={{ color: "#111" }}>
+                <a href="tel:+905553547585" className="text-sm font-bold tracking-[0.1em] transition-opacity hover:opacity-50" style={{ color: "#111" }}>
                   +90 555 354 75 85
                 </a>
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: "rgba(0,0,0,0.3)" }}>Instagram</p>
                 <a href="https://instagram.com/leitmotiv_film" target="_blank" rel="noopener noreferrer"
-                  className="text-sm font-bold uppercase tracking-[0.25em] transition-opacity hover:opacity-50" style={{ color: "#111" }}>
+                  className="text-sm font-bold tracking-[0.1em] transition-opacity hover:opacity-50" style={{ color: "#111" }}>
                   @leitmotiv_film
                 </a>
               </div>
