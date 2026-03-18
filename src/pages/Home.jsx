@@ -208,10 +208,10 @@ function ProjectTile({ project, index }) {
       {/* Title — always visible at bottom */}
       <div className="absolute bottom-0 left-0 right-0 p-5"
         style={{ background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%)" }}>
-        <p className="text-[10px] uppercase tracking-[0.2em] mb-1" style={{ color: RED }}>
+        <p className="text-[9px] uppercase tracking-[0.25em] mb-1" style={{ color: RED }}>
           {project.client}
         </p>
-        <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-white leading-snug">
+        <h3 className="text-[10px] font-bold uppercase tracking-[0.25em] text-white leading-snug">
           {project.title}
         </h3>
       </div>
