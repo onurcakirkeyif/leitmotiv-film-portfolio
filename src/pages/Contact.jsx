@@ -23,7 +23,7 @@ export default function Contact() {
         {/* Info */}
         <div className="p-12 border-r" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="leading-relaxed mb-12 text-[11px] font-bold tracking-[0.25em] max-w-sm text-justify" style={{ color: "rgba(0,0,0,0.5)" }}>
+            <p className="leading-relaxed mb-12 text-base max-w-sm text-justify" style={{ color: "rgba(0,0,0,0.5)" }}>
               Whether you're planning a commercial, documentary, or any production
               in Türkiye — we're here to help bring your vision to life.
             </p>
@@ -50,7 +50,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: "rgba(0,0,0,0.3)" }}>Office</p>
-                <p className="text-[11px] font-bold tracking-[0.25em] leading-relaxed" style={{ color: "rgba(0,0,0,0.5)" }}>
+                <p className="text-base leading-relaxed" style={{ color: "rgba(0,0,0,0.5)" }}>
                   Caferağa Mah. Sakızgülü Sok.<br />
                   Sevin Apt. 29A Floor 1<br />
                   Kadıköy, Istanbul, Türkiye
