@@ -52,7 +52,7 @@ export default function Contact() {
                 <p className="text-[10px] uppercase tracking-[0.3em] mb-2" style={{ color: "rgba(0,0,0,0.3)" }}>Office</p>
                 <p className="text-[13px] leading-relaxed" style={{ color: "rgba(0,0,0,0.5)" }}>
                   Caferağa Mah. Sakızgülü Sok.<br />
-                  Sevin Apt. 29A Floor 1<br />
+                  Sevin Apt. 29A Floor -1<br />
                   Kadıköy, Istanbul, Türkiye
                 </p>
               </div>
