@@ -101,7 +101,7 @@ export default function Layout({ children, currentPageName }) {
                     to={createPageUrl(link.page)}
                     className="font-bold uppercase leading-none transition-colors hover:opacity-50"
                     style={{
-                      fontSize: "clamp(1.2rem, 3vw, 2rem)",
+                      fontSize: "clamp(0.75rem, 2vw, 1rem)",
                       letterSpacing: "0.25em",
                       color: currentPageName === link.page ? RED : "#111",
                     }}
